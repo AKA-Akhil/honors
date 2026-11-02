@@ -1,0 +1,7 @@
+model,level,recipe,n,max_abs_diff,n_over_1e6
+llama32_3b,Q4_K_M,imat,100,0.0,0
+llama32_3b,F16,ref,100,0.0,0
+qwen25_3b,Q4_K_M,imat,100,0.0,0
+qwen25_3b,F16,ref,100,0.0,0
+phi35_mini,Q4_K_M,imat,100,0.0,0
+phi35_mini,F16,ref,100,0.0,0

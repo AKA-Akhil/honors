@@ -1,0 +1,15 @@
+subset,target,n,spearman_rho,p
+"imatrix levels, all models",abs_delta_sel_pp,18,0.728781982355392,0.0006020232830129355
+"imatrix levels, all models",flip_rate,18,0.7701900495346756,0.00018461901400184687
+all quantized runs incl. no-imatrix,abs_delta_sel_pp,27,0.7856185725166713,1.2053650545743546e-06
+all quantized runs incl. no-imatrix,flip_rate,27,0.789966895385386,9.570678453427644e-07
+"imatrix, excl. Qwen",abs_delta_sel_pp,12,0.7986314467964482,0.0018391001365979113
+"imatrix, excl. Qwen",flip_rate,12,0.8783410302571225,0.0001705355586805454
+"imatrix, excl. Qwen Q2_K/Q3_K_M",abs_delta_sel_pp,16,0.6336842128535545,0.008396726424082176
+"imatrix, excl. Qwen Q2_K/Q3_K_M",flip_rate,16,0.6957232266993569,0.0027637000305096616
+within llama32_3b (imat),abs_delta_sel_pp,6,0.6571428571428573,0.1561749271137024
+within llama32_3b (imat),flip_rate,6,0.942857142857143,0.004804664723032055
+within qwen25_3b (imat),abs_delta_sel_pp,6,0.8857142857142858,0.01884548104956266
+within qwen25_3b (imat),flip_rate,6,0.8857142857142858,0.01884548104956266
+within phi35_mini (imat),abs_delta_sel_pp,6,0.9276336570439175,0.00766584418747316
+within phi35_mini (imat),flip_rate,6,0.9276336570439175,0.00766584418747316

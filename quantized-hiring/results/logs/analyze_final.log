@@ -1,0 +1,28 @@
+72 complete runs loaded; models: ['llama32_3b', 'qwen25_3b', 'phi35_mini']
+saved capability (72, 15)
+saved yesno_mass (72, 10)
+saved selection (72, 19)
+saved selection_by_group (144, 16)
+saved gaps (72, 40)
+saved gaps_by_job (288, 10)
+saved gaps_by_tier (288, 10)
+saved flips (63, 23)
+saved flips_by_group (252, 9)
+saved flips_by_tier (252, 7)
+saved flips_by_uncertainty (300, 7)
+saved flips_by_uncertainty_pooled (43, 5)
+saved flip_uncertainty_logit (9, 12)
+saved ablation_imatrix (9, 41)
+saved template_correlations (15, 8)
+saved robustness_labels (54, 11)
+saved quality_vs_drift (30, 13)
+mixed model llama32_3b A NOT converged
+mixed model llama32_3b B converged
+mixed model llama32_3b C NOT converged
+mixed model qwen25_3b A converged
+mixed model qwen25_3b B NOT converged
+mixed model qwen25_3b C converged
+mixed model phi35_mini A NOT converged
+mixed model phi35_mini B NOT converged
+mixed model phi35_mini C NOT converged
+saved mixed_effects (189, 14)

@@ -1,0 +1,13 @@
+CMD: C:\Users\asus\Desktop\quantized-hiring\tools\llama.cpp\cuda\llama-perplexity.exe -m C:\Users\asus\Desktop\quantized-hiring\models\qwen25_3b\qwen25_3b-Q4_K_M-imat.gguf -f C:\Users\asus\Desktop\quantized-hiring\data\calibration\wikitext2_test.txt --chunks 50 -c 512 -ngl 99
+0.13 minutes
+[1]6.9693,[2]9.1549,[3]8.5278,[4]8.6110,[5]8.6511,[6]8.9064,[7]9.1031,[8]9.6006,[9]10.0378,[10]10.3568,[11]10.2702,[12]10.5073,[13]10.8841,[14]10.4711,[15]10.3484,[16]10.4577,[17]9.8409,[18]9.9595,[19]9.8244,[20]9.8154,[21]9.5300,[22]9.5474,[23]9.1781,[24]8.7538,[25]8.5265,[26]8.3537,[27]8.1589,[28]8.0519,[29]8.1473,[30]8.0782,[31]8.0252,[32]8.0468,[33]7.9671,[34]8.0223,[35]8.0775,[36]8.1500,[37]8.2801,[38]8.3022,[39]8.2644,[40]8.3275,[41]8.3357,[42]8.3259,[43]8.3625,[44]8.3293,[45]8.3516,[46]8.3407,[47]8.4864,[48]8.5705,[49]8.5128,[50]8.5698,
+
+
+0.00.427.880 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.815.350 I cmn          init: llama threadpool init, n_threads = 14
+0.01.858.556 I 
+0.01.858.597 I system_info: n_threads = 14 (n_threads_batch = 14) / 20 | CUDA : ARCHS = 500,610,700,750,800,860,890,900 | USE_GRAPHS = 1 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.858.604 I perplexity: tokenizing the input ..
+0.02.138.837 I perplexity: tokenization took 280.22 ms
+0.02.139.420 I perplexity: calculating perplexity over 50 chunks, n_ctx=512, batch_size=2048, n_seq=4
+0.02.848.640 I perplexity: 0.71 seconds per pass - ETA 0.09.814.268 I Final estimate: PPL = 8.5698 +/- 0.20283

@@ -1,0 +1,1009 @@
+PASS ('llama32_3b', 'F16', 'ref', 'A') selection rate @0.5: verify=0.526666666667 table=0.526666666667 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') mean p_yes: verify=0.526415585347 table=0.526415585347 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') gender gap: verify=-0.008246039395 table=-0.008246039395 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') race gap: verify=0.001839305064 table=0.001839305064 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') selection rate @0.5: verify=0.525000000000 table=0.525000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') mean p_yes: verify=0.526768430630 table=0.526768430630 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') gender gap: verify=-0.006450624152 table=-0.006450624152 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') race gap: verify=-0.000985957496 table=-0.000985957496 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') selection rate @0.5: verify=0.523333333333 table=0.523333333333 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') mean p_yes: verify=0.486799015608 table=0.486799015608 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') gender gap: verify=-0.010690158319 table=-0.010690158319 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') race gap: verify=0.000738724893 table=0.000738724893 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') selection rate @0.5: verify=0.548333333333 table=0.548333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') mean p_yes: verify=0.540920190723 table=0.540920190723 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') gender gap: verify=-0.005319310162 table=-0.005319310162 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') race gap: verify=-0.000770065455 table=-0.000770065455 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') flip rate vs F16: verify=0.021666666667 table=0.021666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') selection rate @0.5: verify=0.605000000000 table=0.605000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') mean p_yes: verify=0.598346969994 table=0.598346969994 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') gender gap: verify=-0.003696350950 table=-0.003696350950 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') race gap: verify=-0.007368728368 table=-0.007368728368 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') flip rate vs F16: verify=0.080000000000 table=0.080000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') selection rate @0.5: verify=0.421666666667 table=0.421666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') mean p_yes: verify=0.383416924168 table=0.383416924168 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') gender gap: verify=-0.011796823179 table=-0.011796823179 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') race gap: verify=-0.005007710507 table=-0.005007710507 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') flip rate vs F16: verify=0.101666666667 table=0.101666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') selection rate @0.5: verify=0.746666666667 table=0.746666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') mean p_yes: verify=0.729078431925 table=0.729078431925 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') gender gap: verify=-0.006914003075 table=-0.006914003075 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') race gap: verify=-0.007584956467 table=-0.007584956467 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') flip rate vs F16: verify=0.220000000000 table=0.220000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') selection rate @0.5: verify=0.528333333333 table=0.528333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') mean p_yes: verify=0.516909923189 table=0.516909923189 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') gender gap: verify=-0.007382531548 table=-0.007382531548 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') race gap: verify=0.003315224925 table=0.003315224925 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') flip rate vs F16: verify=0.011666666667 table=0.011666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') selection rate @0.5: verify=0.526666666667 table=0.526666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') mean p_yes: verify=0.518490142070 table=0.518490142070 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') gender gap: verify=-0.004221054856 table=-0.004221054856 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') race gap: verify=-0.002758987902 table=-0.002758987902 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') flip rate vs F16: verify=0.015000000000 table=0.015000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') selection rate @0.5: verify=0.543333333333 table=0.543333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') mean p_yes: verify=0.508719083700 table=0.508719083700 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') gender gap: verify=-0.007450902488 table=-0.007450902488 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') race gap: verify=-0.001019177908 table=-0.001019177908 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') flip rate vs F16: verify=0.020000000000 table=0.020000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') selection rate @0.5: verify=0.498333333333 table=0.498333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') mean p_yes: verify=0.408541200238 table=0.408541200238 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') gender gap: verify=-0.016441615975 table=-0.016441615975 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') race gap: verify=0.008034604935 table=0.008034604935 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') flip rate vs F16: verify=0.028333333333 table=0.028333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') selection rate @0.5: verify=0.510000000000 table=0.510000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') mean p_yes: verify=0.498124484005 table=0.498124484005 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') gender gap: verify=-0.009085200353 table=-0.009085200353 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') race gap: verify=0.004408443450 table=0.004408443450 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') flip rate vs F16: verify=0.016666666667 table=0.016666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') selection rate @0.5: verify=0.516666666667 table=0.516666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') mean p_yes: verify=0.514274719681 table=0.514274719681 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') gender gap: verify=-0.007256283183 table=-0.007256283183 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') race gap: verify=0.000143065195 table=0.000143065195 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') flip rate vs F16: verify=0.015000000000 table=0.015000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') selection rate @0.5: verify=0.510000000000 table=0.510000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') mean p_yes: verify=0.473490302862 table=0.473490302862 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') gender gap: verify=-0.012447292162 table=-0.012447292162 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') race gap: verify=0.002076406522 table=0.002076406522 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') flip rate vs F16: verify=0.020000000000 table=0.020000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') selection rate @0.5: verify=0.541666666667 table=0.541666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') mean p_yes: verify=0.530905735228 table=0.530905735228 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') gender gap: verify=-0.009227015964 table=-0.009227015964 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') race gap: verify=0.001742630627 table=0.001742630627 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') flip rate vs F16: verify=0.015000000000 table=0.015000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') selection rate @0.5: verify=0.533333333333 table=0.533333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') mean p_yes: verify=0.533563248271 table=0.533563248271 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') gender gap: verify=-0.009012854056 table=-0.009012854056 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') race gap: verify=0.002048179021 table=0.002048179021 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') flip rate vs F16: verify=0.006666666667 table=0.006666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') selection rate @0.5: verify=0.531666666667 table=0.531666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') mean p_yes: verify=0.526001676895 table=0.526001676895 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') gender gap: verify=-0.008379802830 table=-0.008379802830 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') race gap: verify=0.000010097046 table=0.000010097046 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') flip rate vs F16: verify=0.006666666667 table=0.006666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') selection rate @0.5: verify=0.513333333333 table=0.513333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') mean p_yes: verify=0.475386696284 table=0.475386696284 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') gender gap: verify=-0.011123895750 table=-0.011123895750 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') race gap: verify=0.000297354728 table=0.000297354728 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') flip rate vs F16: verify=0.010000000000 table=0.010000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') selection rate @0.5: verify=0.523333333333 table=0.523333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') mean p_yes: verify=0.515788750739 table=0.515788750739 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') gender gap: verify=-0.009116316110 table=-0.009116316110 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') race gap: verify=0.002047052118 table=0.002047052118 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') flip rate vs F16: verify=0.003333333333 table=0.003333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') selection rate @0.5: verify=0.516666666667 table=0.516666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') mean p_yes: verify=0.517283958101 table=0.517283958101 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') gender gap: verify=-0.006359981248 table=-0.006359981248 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') race gap: verify=-0.001313433045 table=-0.001313433045 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') flip rate vs F16: verify=0.008333333333 table=0.008333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') selection rate @0.5: verify=0.498333333333 table=0.498333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') mean p_yes: verify=0.452633285747 table=0.452633285747 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') gender gap: verify=-0.012376526628 table=-0.012376526628 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') race gap: verify=0.000520084233 table=0.000520084233 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') flip rate vs F16: verify=0.025000000000 table=0.025000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') selection rate @0.5: verify=0.526666666667 table=0.526666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') mean p_yes: verify=0.526112580929 table=0.526112580929 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') gender gap: verify=-0.008381315564 table=-0.008381315564 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') race gap: verify=0.001564526456 table=0.001564526456 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') flip rate vs F16: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') selection rate @0.5: verify=0.526666666667 table=0.526666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') mean p_yes: verify=0.526033197576 table=0.526033197576 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') gender gap: verify=-0.006891176937 table=-0.006891176937 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') race gap: verify=-0.000267516635 table=-0.000267516635 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') flip rate vs F16: verify=0.001666666667 table=0.001666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') selection rate @0.5: verify=0.525000000000 table=0.525000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') mean p_yes: verify=0.491224549441 table=0.491224549441 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') gender gap: verify=-0.010715334317 table=-0.010715334317 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') race gap: verify=0.000153878242 table=0.000153878242 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') flip rate vs F16: verify=0.005000000000 table=0.005000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') selection rate @0.5: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') mean p_yes: verify=0.612139052219 table=0.612139052219 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') gender gap: verify=-0.001489425276 table=-0.001489425276 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') race gap: verify=-0.002307568442 table=-0.002307568442 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') selection rate @0.5: verify=0.595000000000 table=0.595000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') mean p_yes: verify=0.594746228101 table=0.594746228101 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') gender gap: verify=-0.000422681084 table=-0.000422681084 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') race gap: verify=-0.003497119773 table=-0.003497119773 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') selection rate @0.5: verify=0.620000000000 table=0.620000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') mean p_yes: verify=0.622981811901 table=0.622981811901 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') gender gap: verify=0.001044419668 table=0.001044419668 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') race gap: verify=0.001094231238 table=0.001094231238 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') selection rate @0.5: verify=0.683333333333 table=0.683333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') mean p_yes: verify=0.682191454888 table=0.682191454888 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') gender gap: verify=0.000200538377 table=0.000200538377 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') race gap: verify=-0.008207578960 table=-0.008207578960 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') flip rate vs F16: verify=0.070000000000 table=0.070000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') selection rate @0.5: verify=0.595000000000 table=0.595000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') mean p_yes: verify=0.596908581116 table=0.596908581116 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') gender gap: verify=-0.001992677727 table=-0.001992677727 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') race gap: verify=-0.002839038625 table=-0.002839038625 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') flip rate vs F16: verify=0.033333333333 table=0.033333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') selection rate @0.5: verify=0.636666666667 table=0.636666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') mean p_yes: verify=0.631580015648 table=0.631580015648 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') gender gap: verify=-0.005337305589 table=-0.005337305589 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') race gap: verify=0.001512014848 table=0.001512014848 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') flip rate vs F16: verify=0.020000000000 table=0.020000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') selection rate @0.5: verify=0.670000000000 table=0.670000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') mean p_yes: verify=0.656209758106 table=0.656209758106 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') gender gap: verify=-0.002878377778 table=-0.002878377778 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') race gap: verify=-0.001839138941 table=-0.001839138941 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') flip rate vs F16: verify=0.056666666667 table=0.056666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') selection rate @0.5: verify=0.623333333333 table=0.623333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') mean p_yes: verify=0.627289665112 table=0.627289665112 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') gender gap: verify=-0.002487441688 table=-0.002487441688 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') race gap: verify=-0.002647354328 table=-0.002647354328 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') flip rate vs F16: verify=0.010000000000 table=0.010000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') selection rate @0.5: verify=0.598333333333 table=0.598333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') mean p_yes: verify=0.603142939930 table=0.603142939930 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') gender gap: verify=0.000373868102 table=0.000373868102 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') race gap: verify=-0.002498083563 table=-0.002498083563 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') flip rate vs F16: verify=0.006666666667 table=0.006666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') selection rate @0.5: verify=0.631666666667 table=0.631666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') mean p_yes: verify=0.634425853792 table=0.634425853792 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') gender gap: verify=0.000126202975 table=0.000126202975 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') race gap: verify=-0.001368854346 table=-0.001368854346 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') flip rate vs F16: verify=0.011666666667 table=0.011666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') selection rate @0.5: verify=0.628333333333 table=0.628333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') mean p_yes: verify=0.638299150656 table=0.638299150656 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') gender gap: verify=-0.003006828833 table=-0.003006828833 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') race gap: verify=-0.004320380601 table=-0.004320380601 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') flip rate vs F16: verify=0.015000000000 table=0.015000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') selection rate @0.5: verify=0.611666666667 table=0.611666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') mean p_yes: verify=0.611569806451 table=0.611569806451 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') gender gap: verify=-0.002092589340 table=-0.002092589340 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') race gap: verify=-0.003119515476 table=-0.003119515476 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') flip rate vs F16: verify=0.001666666667 table=0.001666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') selection rate @0.5: verify=0.601666666667 table=0.601666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') mean p_yes: verify=0.600542413746 table=0.600542413746 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') gender gap: verify=-0.003357264183 table=-0.003357264183 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') race gap: verify=-0.004319494952 table=-0.004319494952 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') flip rate vs F16: verify=0.006666666667 table=0.006666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') selection rate @0.5: verify=0.633333333333 table=0.633333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') mean p_yes: verify=0.630746052243 table=0.630746052243 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') gender gap: verify=0.000306828303 table=0.000306828303 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') race gap: verify=0.000475273425 table=0.000475273425 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') flip rate vs F16: verify=0.013333333333 table=0.013333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') selection rate @0.5: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') mean p_yes: verify=0.609748879257 table=0.609748879257 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') gender gap: verify=-0.000815528215 table=-0.000815528215 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') race gap: verify=-0.000887189580 table=-0.000887189580 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') flip rate vs F16: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') selection rate @0.5: verify=0.610000000000 table=0.610000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') mean p_yes: verify=0.609480583884 table=0.609480583884 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') gender gap: verify=-0.005098813501 table=-0.005098813501 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') race gap: verify=-0.005033862474 table=-0.005033862474 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') flip rate vs F16: verify=0.003333333333 table=0.003333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') selection rate @0.5: verify=0.590000000000 table=0.590000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') mean p_yes: verify=0.589981291147 table=0.589981291147 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') gender gap: verify=-0.000319191393 table=-0.000319191393 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') race gap: verify=-0.003127823001 table=-0.003127823001 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') flip rate vs F16: verify=0.005000000000 table=0.005000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') selection rate @0.5: verify=0.625000000000 table=0.625000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') mean p_yes: verify=0.624950463003 table=0.624950463003 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') gender gap: verify=0.000078313774 table=0.000078313774 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') race gap: verify=0.002362869264 table=0.002362869264 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') flip rate vs F16: verify=0.008333333333 table=0.008333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') selection rate @0.5: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') mean p_yes: verify=0.614295110702 table=0.614295110702 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') gender gap: verify=-0.000432153290 table=-0.000432153290 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') race gap: verify=-0.000780037812 table=-0.000780037812 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') flip rate vs F16: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') selection rate @0.5: verify=0.595000000000 table=0.595000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') mean p_yes: verify=0.594279403693 table=0.594279403693 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') gender gap: verify=-0.001275233910 table=-0.001275233910 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') race gap: verify=-0.003589194039 table=-0.003589194039 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') flip rate vs F16: verify=0.003333333333 table=0.003333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') selection rate @0.5: verify=0.615000000000 table=0.615000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') mean p_yes: verify=0.622163319512 table=0.622163319512 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') gender gap: verify=0.000948134734 table=0.000948134734 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') race gap: verify=0.000183789713 table=0.000183789713 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') flip rate vs F16: verify=0.005000000000 table=0.005000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') selection rate @0.5: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') mean p_yes: verify=0.613253836596 table=0.613253836596 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') gender gap: verify=-0.000977623599 table=-0.000977623599 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') race gap: verify=-0.001683214585 table=-0.001683214585 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') flip rate vs F16: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') selection rate @0.5: verify=0.596666666667 table=0.596666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') mean p_yes: verify=0.596663249262 table=0.596663249262 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') gender gap: verify=-0.001252521528 table=-0.001252521528 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') race gap: verify=-0.003415821203 table=-0.003415821203 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') flip rate vs F16: verify=0.001666666667 table=0.001666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') selection rate @0.5: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') mean p_yes: verify=0.621468613801 table=0.621468613801 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') gender gap: verify=0.000977813769 table=0.000977813769 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') race gap: verify=0.000601215152 table=0.000601215152 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') flip rate vs F16: verify=0.006666666667 table=0.006666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') selection rate @0.5: verify=0.373333333333 table=0.373333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') mean p_yes: verify=0.366506614224 table=0.366506614224 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') gender gap: verify=0.000941881570 table=0.000941881570 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') race gap: verify=0.009624493176 table=0.009624493176 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') selection rate @0.5: verify=0.325000000000 table=0.325000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') mean p_yes: verify=0.302090286020 table=0.302090286020 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') gender gap: verify=-0.012320885075 table=-0.012320885075 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') race gap: verify=0.009086375137 table=0.009086375137 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') selection rate @0.5: verify=0.181666666667 table=0.181666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') mean p_yes: verify=0.190778078169 table=0.190778078169 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') gender gap: verify=-0.014371872482 table=-0.014371872482 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') race gap: verify=0.001050647432 table=0.001050647432 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') selection rate @0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') mean p_yes: verify=0.003601974037 table=0.003601974037 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') gender gap: verify=-0.001590256914 table=-0.001590256914 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') race gap: verify=0.001164078318 table=0.001164078318 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') flip rate vs F16: verify=0.373333333333 table=0.373333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') selection rate @0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') mean p_yes: verify=0.002937400378 table=0.002937400378 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') gender gap: verify=-0.001381401607 table=-0.001381401607 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') race gap: verify=0.001633836219 table=0.001633836219 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') flip rate vs F16: verify=0.325000000000 table=0.325000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') selection rate @0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') mean p_yes: verify=0.036820632427 table=0.036820632427 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') gender gap: verify=-0.007213551049 table=-0.007213551049 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') race gap: verify=0.013800588646 table=0.013800588646 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') flip rate vs F16: verify=0.181666666667 table=0.181666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') selection rate @0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') mean p_yes: verify=0.118709067737 table=0.118709067737 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') gender gap: verify=0.000093662313 table=0.000093662313 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') race gap: verify=0.000181981572 table=0.000181981572 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') flip rate vs F16: verify=0.373333333333 table=0.373333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') selection rate @0.5: verify=0.083333333333 table=0.083333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') mean p_yes: verify=0.086018502845 table=0.086018502845 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') gender gap: verify=-0.006233962609 table=-0.006233962609 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') race gap: verify=-0.001360433639 table=-0.001360433639 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') flip rate vs F16: verify=0.290000000000 table=0.290000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') selection rate @0.5: verify=0.003333333333 table=0.003333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') mean p_yes: verify=0.024107462558 table=0.024107462558 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') gender gap: verify=-0.005403469467 table=-0.005403469467 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') race gap: verify=-0.004255545592 table=-0.004255545592 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') flip rate vs F16: verify=0.321666666667 table=0.321666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') selection rate @0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') mean p_yes: verify=0.009533105048 table=0.009533105048 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') gender gap: verify=-0.004145488332 table=-0.004145488332 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') race gap: verify=-0.001968171547 table=-0.001968171547 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') flip rate vs F16: verify=0.181666666667 table=0.181666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') selection rate @0.5: verify=0.235000000000 table=0.235000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') mean p_yes: verify=0.238487581512 table=0.238487581512 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') gender gap: verify=-0.012616728728 table=-0.012616728728 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') race gap: verify=0.006727166166 table=0.006727166166 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') flip rate vs F16: verify=0.185000000000 table=0.185000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') selection rate @0.5: verify=0.355000000000 table=0.355000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') mean p_yes: verify=0.336250073263 table=0.336250073263 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') gender gap: verify=0.001024880856 table=0.001024880856 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') race gap: verify=0.011339593959 table=0.011339593959 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') flip rate vs F16: verify=0.031666666667 table=0.031666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') selection rate @0.5: verify=0.310000000000 table=0.310000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') mean p_yes: verify=0.286507858827 table=0.286507858827 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') gender gap: verify=-0.006772659803 table=-0.006772659803 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') race gap: verify=0.003267065769 table=0.003267065769 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') flip rate vs F16: verify=0.068333333333 table=0.068333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') selection rate @0.5: verify=0.315000000000 table=0.315000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') mean p_yes: verify=0.287426857306 table=0.287426857306 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') gender gap: verify=-0.008641519548 table=-0.008641519548 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') race gap: verify=0.013745948584 table=0.013745948584 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') flip rate vs F16: verify=0.136666666667 table=0.136666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') selection rate @0.5: verify=0.310000000000 table=0.310000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') mean p_yes: verify=0.293203891174 table=0.293203891174 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') gender gap: verify=-0.008442707757 table=-0.008442707757 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') race gap: verify=-0.002132850239 table=-0.002132850239 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') flip rate vs F16: verify=0.070000000000 table=0.070000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') selection rate @0.5: verify=0.318333333333 table=0.318333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') mean p_yes: verify=0.309815129359 table=0.309815129359 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') gender gap: verify=0.002041481209 table=0.002041481209 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') race gap: verify=0.007338662401 table=0.007338662401 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') flip rate vs F16: verify=0.055000000000 table=0.055000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') selection rate @0.5: verify=0.126666666667 table=0.126666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') mean p_yes: verify=0.135859523260 table=0.135859523260 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') gender gap: verify=-0.016765845706 table=-0.016765845706 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') race gap: verify=0.009536116167 table=0.009536116167 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') flip rate vs F16: verify=0.198333333333 table=0.198333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') selection rate @0.5: verify=0.078333333333 table=0.078333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') mean p_yes: verify=0.098974636912 table=0.098974636912 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') gender gap: verify=-0.013280724635 table=-0.013280724635 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') race gap: verify=-0.001297233904 table=-0.001297233904 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') flip rate vs F16: verify=0.103333333333 table=0.103333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') selection rate @0.5: verify=0.388333333333 table=0.388333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') mean p_yes: verify=0.378832452727 table=0.378832452727 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') gender gap: verify=0.001224044603 table=0.001224044603 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') race gap: verify=0.012466348964 table=0.012466348964 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') flip rate vs F16: verify=0.018333333333 table=0.018333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') selection rate @0.5: verify=0.308333333333 table=0.308333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') mean p_yes: verify=0.288334332696 table=0.288334332696 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') gender gap: verify=-0.014959968996 table=-0.014959968996 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') race gap: verify=0.005839945613 table=0.005839945613 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') flip rate vs F16: verify=0.023333333333 table=0.023333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') selection rate @0.5: verify=0.168333333333 table=0.168333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') mean p_yes: verify=0.177210779991 table=0.177210779991 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') gender gap: verify=-0.012204185421 table=-0.012204185421 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') race gap: verify=0.005405690321 table=0.005405690321 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') flip rate vs F16: verify=0.030000000000 table=0.030000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') selection rate @0.5: verify=0.385000000000 table=0.385000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') mean p_yes: verify=0.375858004620 table=0.375858004620 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') gender gap: verify=0.000148280271 table=0.000148280271 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') race gap: verify=0.008808606693 table=0.008808606693 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') flip rate vs F16: verify=0.011666666667 table=0.011666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') selection rate @0.5: verify=0.336666666667 table=0.336666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') mean p_yes: verify=0.309569236128 table=0.309569236128 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') gender gap: verify=-0.013433528634 table=-0.013433528634 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') race gap: verify=0.005267617404 table=0.005267617404 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') flip rate vs F16: verify=0.018333333333 table=0.018333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') selection rate @0.5: verify=0.210000000000 table=0.210000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') mean p_yes: verify=0.204909305865 table=0.204909305865 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') gender gap: verify=-0.017727826648 table=-0.017727826648 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') race gap: verify=0.001655211521 table=0.001655211521 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') flip rate vs F16: verify=0.028333333333 table=0.028333333333 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') mass mean: verify=0.999985830129 table=0.999985830129 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') mass median: verify=0.999987618203 table=0.999987618203 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') mass p05: verify=0.999962819618 table=0.999962819618 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') filtered sel rate: verify=0.526666666667 table=0.526666666667 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'F16', 'ref', 'B') mass mean: verify=0.999984116798 table=0.999984116798 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') mass median: verify=0.999988042159 table=0.999988042159 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') mass p05: verify=0.999952890979 table=0.999952890979 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') filtered sel rate: verify=0.525000000000 table=0.525000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'F16', 'ref', 'C') mass mean: verify=0.999983209779 table=0.999983209779 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') mass median: verify=0.999987824907 table=0.999987824907 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') mass p05: verify=0.999955110116 table=0.999955110116 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') filtered sel rate: verify=0.523333333333 table=0.523333333333 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'F16', 'ref', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') mass mean: verify=0.999980680979 table=0.999980680979 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') mass median: verify=0.999984362262 table=0.999984362262 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') mass p05: verify=0.999957829640 table=0.999957829640 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') filtered sel rate: verify=0.548333333333 table=0.548333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') mass mean: verify=0.999921859458 table=0.999921859458 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') mass median: verify=0.999944730269 table=0.999944730269 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') mass p05: verify=0.999807101700 table=0.999807101700 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') filtered sel rate: verify=0.605000000000 table=0.605000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') mass mean: verify=0.999975108383 table=0.999975108383 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') mass median: verify=0.999977743669 table=0.999977743669 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') mass p05: verify=0.999945160789 table=0.999945160789 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') filtered sel rate: verify=0.421666666667 table=0.421666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') mass mean: verify=0.999888395977 table=0.999888395977 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') mass median: verify=0.999893147697 table=0.999893147697 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') mass p05: verify=0.999789054654 table=0.999789054654 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') filtered sel rate: verify=0.746666666667 table=0.746666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') mass mean: verify=0.999980206321 table=0.999980206321 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') mass median: verify=0.999983054267 table=0.999983054267 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') mass p05: verify=0.999960672213 table=0.999960672213 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') filtered sel rate: verify=0.528333333333 table=0.528333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') mass mean: verify=0.999964306928 table=0.999964306928 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') mass median: verify=0.999968692583 table=0.999968692583 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') mass p05: verify=0.999921967882 table=0.999921967882 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') filtered sel rate: verify=0.526666666667 table=0.526666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') mass mean: verify=0.999965630118 table=0.999965630118 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') mass median: verify=0.999968509271 table=0.999968509271 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') mass p05: verify=0.999925304653 table=0.999925304653 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') filtered sel rate: verify=0.543333333333 table=0.543333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') mass mean: verify=0.999955996106 table=0.999955996106 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') mass median: verify=0.999955548551 table=0.999955548551 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') mass p05: verify=0.999919141958 table=0.999919141958 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') filtered sel rate: verify=0.498333333333 table=0.498333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') mass mean: verify=0.999981493077 table=0.999981493077 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') mass median: verify=0.999986598723 table=0.999986598723 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') mass p05: verify=0.999954828079 table=0.999954828079 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') filtered sel rate: verify=0.510000000000 table=0.510000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') mass mean: verify=0.999982683430 table=0.999982683430 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') mass median: verify=0.999986399260 table=0.999986399260 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') mass p05: verify=0.999961097817 table=0.999961097817 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') filtered sel rate: verify=0.516666666667 table=0.516666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') mass mean: verify=0.999980189206 table=0.999980189206 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') mass median: verify=0.999984746873 table=0.999984746873 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') mass p05: verify=0.999951523754 table=0.999951523754 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') filtered sel rate: verify=0.510000000000 table=0.510000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') mass mean: verify=0.999985054607 table=0.999985054607 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') mass median: verify=0.999988367577 table=0.999988367577 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') mass p05: verify=0.999962275776 table=0.999962275776 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') filtered sel rate: verify=0.541666666667 table=0.541666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') mass mean: verify=0.999989001817 table=0.999989001817 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') mass median: verify=0.999990762228 table=0.999990762228 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') mass p05: verify=0.999972954239 table=0.999972954239 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') filtered sel rate: verify=0.533333333333 table=0.533333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') mass mean: verify=0.999986566518 table=0.999986566518 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') mass median: verify=0.999990046719 table=0.999990046719 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') mass p05: verify=0.999963301128 table=0.999963301128 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') filtered sel rate: verify=0.531666666667 table=0.531666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') mass mean: verify=0.999987302573 table=0.999987302573 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') mass median: verify=0.999990495272 table=0.999990495272 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') mass p05: verify=0.999967224315 table=0.999967224315 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') filtered sel rate: verify=0.513333333333 table=0.513333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') mass mean: verify=0.999988241623 table=0.999988241623 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') mass median: verify=0.999989879825 table=0.999989879825 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') mass p05: verify=0.999970658450 table=0.999970658450 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') filtered sel rate: verify=0.523333333333 table=0.523333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') mass mean: verify=0.999987555192 table=0.999987555192 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') mass median: verify=0.999990563222 table=0.999990563222 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') mass p05: verify=0.999968306588 table=0.999968306588 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') filtered sel rate: verify=0.516666666667 table=0.516666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') mass mean: verify=0.999986319517 table=0.999986319517 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') mass median: verify=0.999988813861 table=0.999988813861 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') mass p05: verify=0.999965658116 table=0.999965658116 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') filtered sel rate: verify=0.498333333333 table=0.498333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') mass mean: verify=0.999985967723 table=0.999985967723 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') mass median: verify=0.999987796247 table=0.999987796247 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') mass p05: verify=0.999962741566 table=0.999962741566 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') filtered sel rate: verify=0.526666666667 table=0.526666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') mass mean: verify=0.999983837538 table=0.999983837538 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') mass median: verify=0.999987716472 table=0.999987716472 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') mass p05: verify=0.999951890074 table=0.999951890074 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') filtered sel rate: verify=0.526666666667 table=0.526666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') mass mean: verify=0.999982849858 table=0.999982849858 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') mass median: verify=0.999987803966 table=0.999987803966 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') mass p05: verify=0.999954229979 table=0.999954229979 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') filtered sel rate: verify=0.525000000000 table=0.525000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'F16', 'ref', 'A') mass mean: verify=0.999513646766 table=0.999513646766 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') mass median: verify=0.999623660506 table=0.999623660506 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') mass p05: verify=0.998748745475 table=0.998748745475 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') filtered sel rate: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'F16', 'ref', 'B') mass mean: verify=0.999694840032 table=0.999694840032 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') mass median: verify=0.999735541078 table=0.999735541078 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') mass p05: verify=0.999180828964 table=0.999180828964 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') filtered sel rate: verify=0.595000000000 table=0.595000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'F16', 'ref', 'C') mass mean: verify=0.999655467839 table=0.999655467839 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') mass median: verify=0.999719601113 table=0.999719601113 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') mass p05: verify=0.999165237356 table=0.999165237356 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') filtered sel rate: verify=0.620000000000 table=0.620000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'F16', 'ref', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') mass mean: verify=0.956538113613 table=0.956538113613 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') mass median: verify=0.976425637777 table=0.976425637777 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') mass p05: verify=0.835947099396 table=0.835947099396 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') share mass<0.9: verify=0.130000000000 table=0.130000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') filtered sel rate: verify=0.683333333333 table=0.683333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') mass mean: verify=0.995647652849 table=0.995647652849 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') mass median: verify=0.998654201222 table=0.998654201222 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') mass p05: verify=0.982113549389 table=0.982113549389 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') share mass<0.9: verify=0.003333333333 table=0.003333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') filtered sel rate: verify=0.595000000000 table=0.595000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') mass mean: verify=0.991882645881 table=0.991882645881 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') mass median: verify=0.995429947683 table=0.995429947683 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') mass p05: verify=0.972325039810 table=0.972325039810 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') filtered sel rate: verify=0.636666666667 table=0.636666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') mass mean: verify=0.821308471269 table=0.821308471269 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') mass median: verify=0.871102070475 table=0.871102070475 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') mass p05: verify=0.493802619319 table=0.493802619319 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') share mass<0.5: verify=0.053333333333 table=0.053333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') share mass<0.9: verify=0.643333333333 table=0.643333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') filtered sel rate: verify=0.684859154930 table=0.684859154930 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') n_kept: verify=568.000000000000 table=568.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') mass mean: verify=0.999962304820 table=0.999962304820 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') mass median: verify=0.999974410380 table=0.999974410380 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') mass p05: verify=0.999883400168 table=0.999883400168 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') filtered sel rate: verify=0.623333333333 table=0.623333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') mass mean: verify=0.999964549292 table=0.999964549292 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') mass median: verify=0.999984304788 table=0.999984304788 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') mass p05: verify=0.999861609149 table=0.999861609149 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') filtered sel rate: verify=0.598333333333 table=0.598333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') mass mean: verify=0.999939229733 table=0.999939229733 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') mass median: verify=0.999954076089 table=0.999954076089 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') mass p05: verify=0.999824395962 table=0.999824395962 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') filtered sel rate: verify=0.631666666667 table=0.631666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') mass mean: verify=0.999924628508 table=0.999924628508 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') mass median: verify=0.999971502573 table=0.999971502573 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') mass p05: verify=0.999712243273 table=0.999712243273 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') filtered sel rate: verify=0.628333333333 table=0.628333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') mass mean: verify=0.999858661193 table=0.999858661193 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') mass median: verify=0.999912957408 table=0.999912957408 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') mass p05: verify=0.999610676912 table=0.999610676912 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') filtered sel rate: verify=0.611666666667 table=0.611666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') mass mean: verify=0.999861562022 table=0.999861562022 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') mass median: verify=0.999899952060 table=0.999899952060 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') mass p05: verify=0.999579636849 table=0.999579636849 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') filtered sel rate: verify=0.601666666667 table=0.601666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') mass mean: verify=0.999457238341 table=0.999457238341 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') mass median: verify=0.999526169682 table=0.999526169682 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') mass p05: verify=0.998608826830 table=0.998608826830 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') filtered sel rate: verify=0.633333333333 table=0.633333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') mass mean: verify=0.999925121072 table=0.999925121072 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') mass median: verify=0.999949373253 table=0.999949373253 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') mass p05: verify=0.999785787657 table=0.999785787657 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') filtered sel rate: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') mass mean: verify=0.999714029888 table=0.999714029888 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') mass median: verify=0.999788872725 table=0.999788872725 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') mass p05: verify=0.999156421038 table=0.999156421038 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') filtered sel rate: verify=0.610000000000 table=0.610000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') mass mean: verify=0.999772447156 table=0.999772447156 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') mass median: verify=0.999846033699 table=0.999846033699 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') mass p05: verify=0.999387829756 table=0.999387829756 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') filtered sel rate: verify=0.590000000000 table=0.590000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') mass mean: verify=0.999698964555 table=0.999698964555 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') mass median: verify=0.999763378680 table=0.999763378680 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') mass p05: verify=0.999208926893 table=0.999208926893 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') filtered sel rate: verify=0.625000000000 table=0.625000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') mass mean: verify=0.999601087269 table=0.999601087269 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') mass median: verify=0.999729697171 table=0.999729697171 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') mass p05: verify=0.998982557795 table=0.998982557795 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') filtered sel rate: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') mass mean: verify=0.999715008282 table=0.999715008282 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') mass median: verify=0.999766796183 table=0.999766796183 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') mass p05: verify=0.999299142661 table=0.999299142661 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') filtered sel rate: verify=0.595000000000 table=0.595000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') mass mean: verify=0.999604908821 table=0.999604908821 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') mass median: verify=0.999665081982 table=0.999665081982 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') mass p05: verify=0.999046408106 table=0.999046408106 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') filtered sel rate: verify=0.615000000000 table=0.615000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') mass mean: verify=0.999515299624 table=0.999515299624 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') mass median: verify=0.999636085386 table=0.999636085386 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') mass p05: verify=0.998761954480 table=0.998761954480 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') filtered sel rate: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') mass mean: verify=0.999693295013 table=0.999693295013 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') mass median: verify=0.999754188712 table=0.999754188712 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') mass p05: verify=0.999177989636 table=0.999177989636 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') filtered sel rate: verify=0.596666666667 table=0.596666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') mass mean: verify=0.999586184381 table=0.999586184381 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') mass median: verify=0.999659138198 table=0.999659138198 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') mass p05: verify=0.998985411128 table=0.998985411128 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') filtered sel rate: verify=0.613333333333 table=0.613333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'F16', 'ref', 'A') mass mean: verify=0.999999987122 table=0.999999987122 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') mass median: verify=0.999999993461 table=0.999999993461 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') mass p05: verify=0.999999959247 table=0.999999959247 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') filtered sel rate: verify=0.373333333333 table=0.373333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'F16', 'ref', 'B') mass mean: verify=0.999999944567 table=0.999999944567 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') mass median: verify=0.999999997162 table=0.999999997162 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') mass p05: verify=0.999999758794 table=0.999999758794 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') filtered sel rate: verify=0.325000000000 table=0.325000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'F16', 'ref', 'C') mass mean: verify=0.999999935379 table=0.999999935379 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') mass median: verify=0.999999990855 table=0.999999990855 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') mass p05: verify=0.999999756847 table=0.999999756847 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') filtered sel rate: verify=0.181666666667 table=0.181666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'F16', 'ref', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') mass mean: verify=0.999999976849 table=0.999999976849 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') mass median: verify=0.999999986846 table=0.999999986846 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') mass p05: verify=0.999999931809 table=0.999999931809 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') filtered sel rate: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') impact ratio undefined-rule (degenerate=True)
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') mass mean: verify=0.999999967674 table=0.999999967674 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') mass median: verify=0.999999984497 table=0.999999984497 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') mass p05: verify=0.999999877167 table=0.999999877167 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') filtered sel rate: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'B') impact ratio undefined-rule (degenerate=True)
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') mass mean: verify=0.999999982085 table=0.999999982085 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') mass median: verify=0.999999994215 table=0.999999994215 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') mass p05: verify=0.999999920160 table=0.999999920160 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') filtered sel rate: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'C') impact ratio undefined-rule (degenerate=True)
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') mass mean: verify=0.000435927198 table=0.000435927198 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') mass median: verify=0.000437184181 table=0.000437184181 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') mass p05: verify=0.000392550468 table=0.000392550468 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') share mass<0.5: verify=1.000000000000 table=1.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') share mass<0.9: verify=1.000000000000 table=1.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') n_kept: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') impact ratio undefined-rule (degenerate=True)
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') mass mean: verify=0.999999975295 table=0.999999975295 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') mass median: verify=0.999999982423 table=0.999999982423 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') mass p05: verify=0.999999936765 table=0.999999936765 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') filtered sel rate: verify=0.083333333333 table=0.083333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') mass mean: verify=0.999999917180 table=0.999999917180 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') mass median: verify=0.999999983541 table=0.999999983541 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') mass p05: verify=0.999999705555 table=0.999999705555 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') filtered sel rate: verify=0.003333333333 table=0.003333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=True)
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') mass mean: verify=0.999999949077 table=0.999999949077 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') mass median: verify=0.999999988136 table=0.999999988136 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') mass p05: verify=0.999999800518 table=0.999999800518 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') filtered sel rate: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=True)
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') mass mean: verify=0.999999996396 table=0.999999996396 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') mass median: verify=0.999999997844 table=0.999999997844 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') mass p05: verify=0.999999990061 table=0.999999990061 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') filtered sel rate: verify=0.235000000000 table=0.235000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') mass mean: verify=0.999999988758 table=0.999999988758 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') mass median: verify=0.999999996917 table=0.999999996917 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') mass p05: verify=0.999999958420 table=0.999999958420 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') filtered sel rate: verify=0.355000000000 table=0.355000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') mass mean: verify=0.999999971132 table=0.999999971132 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') mass median: verify=0.999999998164 table=0.999999998164 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') mass p05: verify=0.999999863530 table=0.999999863530 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') filtered sel rate: verify=0.310000000000 table=0.310000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') mass mean: verify=0.999999961731 table=0.999999961731 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') mass median: verify=0.999999996465 table=0.999999996465 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') mass p05: verify=0.999999828911 table=0.999999828911 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') filtered sel rate: verify=0.315000000000 table=0.315000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') mass mean: verify=0.999999986763 table=0.999999986763 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') mass median: verify=0.999999997177 table=0.999999997177 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') mass p05: verify=0.999999955438 table=0.999999955438 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') filtered sel rate: verify=0.310000000000 table=0.310000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') mass mean: verify=0.999999987757 table=0.999999987757 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') mass median: verify=0.999999994291 table=0.999999994291 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') mass p05: verify=0.999999957417 table=0.999999957417 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') filtered sel rate: verify=0.318333333333 table=0.318333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') mass mean: verify=0.999999945145 table=0.999999945145 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') mass median: verify=0.999999993676 table=0.999999993676 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') mass p05: verify=0.999999767132 table=0.999999767132 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') filtered sel rate: verify=0.126666666667 table=0.126666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') mass mean: verify=0.999999945906 table=0.999999945906 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') mass median: verify=0.999999989229 table=0.999999989229 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') mass p05: verify=0.999999792028 table=0.999999792028 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') filtered sel rate: verify=0.078333333333 table=0.078333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') mass mean: verify=0.999999979506 table=0.999999979506 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') mass median: verify=0.999999989954 table=0.999999989954 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') mass p05: verify=0.999999931985 table=0.999999931985 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') filtered sel rate: verify=0.388333333333 table=0.388333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') mass mean: verify=0.999999877168 table=0.999999877168 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') mass median: verify=0.999999993384 table=0.999999993384 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') mass p05: verify=0.999999462674 table=0.999999462674 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') filtered sel rate: verify=0.308333333333 table=0.308333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') mass mean: verify=0.999999880305 table=0.999999880305 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') mass median: verify=0.999999977178 table=0.999999977178 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') mass p05: verify=0.999999547126 table=0.999999547126 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') filtered sel rate: verify=0.168333333333 table=0.168333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') mass mean: verify=0.999999988633 table=0.999999988633 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') mass median: verify=0.999999993889 table=0.999999993889 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') mass p05: verify=0.999999963855 table=0.999999963855 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') filtered sel rate: verify=0.385000000000 table=0.385000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') mass mean: verify=0.999999953156 table=0.999999953156 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') mass median: verify=0.999999997124 table=0.999999997124 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') mass p05: verify=0.999999795308 table=0.999999795308 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') filtered sel rate: verify=0.336666666667 table=0.336666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'B') impact ratio undefined-rule (degenerate=False)
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') mass mean: verify=0.999999931436 table=0.999999931436 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') mass median: verify=0.999999991912 table=0.999999991912 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') mass p05: verify=0.999999733285 table=0.999999733285 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') share mass<0.5: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') share mass<0.9: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') filtered sel rate: verify=0.210000000000 table=0.210000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') n_kept: verify=600.000000000000 table=600.000000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'C') impact ratio undefined-rule (degenerate=False)
+PASS ('llama32_3b', 'Q8_0', 'imat') rel ppl increase: verify=0.001841495682 table=0.001841495682 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') ppl table flip rate: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q8_0', 'imat', 'A') ppl table delta sel pp: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat') rel ppl increase: verify=0.004254824234 table=0.004254824234 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') ppl table flip rate: verify=0.003333333333 table=0.003333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q6_K', 'imat', 'A') ppl table delta sel pp: verify=-0.333333333333 table=-0.333333333333 diff=3.39e-15
+PASS ('llama32_3b', 'Q5_K_M', 'imat') rel ppl increase: verify=0.007530748132 table=0.007530748132 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') ppl table flip rate: verify=0.006666666667 table=0.006666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q5_K_M', 'imat', 'A') ppl table delta sel pp: verify=0.666666666667 table=0.666666666667 diff=4.33e-15
+PASS ('llama32_3b', 'Q4_K_M', 'imat') rel ppl increase: verify=0.019965690028 table=0.019965690028 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') ppl table flip rate: verify=0.016666666667 table=0.016666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'imat', 'A') ppl table delta sel pp: verify=-1.666666666667 table=-1.666666666667 diff=6.00e-15
+PASS ('llama32_3b', 'Q3_K_M', 'imat') rel ppl increase: verify=0.055797319170 table=0.055797319170 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') ppl table flip rate: verify=0.011666666667 table=0.011666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'imat', 'A') ppl table delta sel pp: verify=0.166666666667 table=0.166666666667 diff=3.86e-15
+PASS ('llama32_3b', 'Q2_K', 'imat') rel ppl increase: verify=0.412078273259 table=0.412078273259 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') ppl table flip rate: verify=0.021666666667 table=0.021666666667 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'imat', 'A') ppl table delta sel pp: verify=2.166666666667 table=2.166666666667 diff=5.77e-15
+PASS ('llama32_3b', 'Q4_K_M', 'noimat') rel ppl increase: verify=0.031305426597 table=0.031305426597 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') ppl table flip rate: verify=0.015000000000 table=0.015000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q4_K_M', 'noimat', 'A') ppl table delta sel pp: verify=1.500000000000 table=1.500000000000 diff=1.33e-15
+PASS ('llama32_3b', 'Q3_K_M', 'noimat') rel ppl increase: verify=0.107194432868 table=0.107194432868 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') ppl table flip rate: verify=0.028333333333 table=0.028333333333 diff=0.00e+00
+PASS ('llama32_3b', 'Q3_K_M', 'noimat', 'A') ppl table delta sel pp: verify=-2.833333333333 table=-2.833333333333 diff=6.66e-15
+PASS ('llama32_3b', 'Q2_K', 'noimat') rel ppl increase: verify=0.579722224914 table=0.579722224914 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') ppl table flip rate: verify=0.220000000000 table=0.220000000000 diff=0.00e+00
+PASS ('llama32_3b', 'Q2_K', 'noimat', 'A') ppl table delta sel pp: verify=22.000000000000 table=22.000000000000 diff=7.11e-15
+PASS ('qwen25_3b', 'Q8_0', 'imat') rel ppl increase: verify=0.001730962439 table=0.001730962439 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') ppl table flip rate: verify=0.011666666667 table=0.011666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q8_0', 'imat', 'A') ppl table delta sel pp: verify=1.166666666667 table=1.166666666667 diff=8.88e-16
+PASS ('qwen25_3b', 'Q6_K', 'imat') rel ppl increase: verify=0.007650127704 table=0.007650127704 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') ppl table flip rate: verify=0.018333333333 table=0.018333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q6_K', 'imat', 'A') ppl table delta sel pp: verify=1.500000000000 table=1.500000000000 diff=4.22e-15
+PASS ('qwen25_3b', 'Q5_K_M', 'imat') rel ppl increase: verify=0.019391621173 table=0.019391621173 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') ppl table flip rate: verify=0.055000000000 table=0.055000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q5_K_M', 'imat', 'A') ppl table delta sel pp: verify=-5.500000000000 table=-5.500000000000 diff=8.88e-16
+PASS ('qwen25_3b', 'Q4_K_M', 'imat') rel ppl increase: verify=0.037342791086 table=0.037342791086 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') ppl table flip rate: verify=0.031666666667 table=0.031666666667 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'imat', 'A') ppl table delta sel pp: verify=-1.833333333333 table=-1.833333333333 diff=3.55e-15
+PASS ('qwen25_3b', 'Q3_K_M', 'imat') rel ppl increase: verify=0.547432002227 table=0.547432002227 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') ppl table flip rate: verify=0.290000000000 table=0.290000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'imat', 'A') ppl table delta sel pp: verify=-29.000000000000 table=-29.000000000000 diff=3.55e-15
+PASS ('qwen25_3b', 'Q2_K', 'imat') rel ppl increase: verify=0.339837555833 table=0.339837555833 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') ppl table flip rate: verify=0.373333333333 table=0.373333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'imat', 'A') ppl table delta sel pp: verify=-37.333333333333 table=-37.333333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat') rel ppl increase: verify=0.061128393836 table=0.061128393836 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') ppl table flip rate: verify=0.070000000000 table=0.070000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q4_K_M', 'noimat', 'A') ppl table delta sel pp: verify=-6.333333333333 table=-6.333333333333 diff=2.66e-15
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat') rel ppl increase: verify=0.765872199291 table=0.765872199291 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') ppl table flip rate: verify=0.185000000000 table=0.185000000000 diff=0.00e+00
+PASS ('qwen25_3b', 'Q3_K_M', 'noimat', 'A') ppl table delta sel pp: verify=-13.833333333333 table=-13.833333333333 diff=1.78e-15
+PASS ('qwen25_3b', 'Q2_K', 'noimat') rel ppl increase: verify=2367.081924152373 table=2367.081924152373 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') ppl table flip rate: verify=0.373333333333 table=0.373333333333 diff=0.00e+00
+PASS ('qwen25_3b', 'Q2_K', 'noimat', 'A') ppl table delta sel pp: verify=-37.333333333333 table=-37.333333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat') rel ppl increase: verify=-0.002957668371 table=-0.002957668371 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') ppl table flip rate: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q8_0', 'imat', 'A') ppl table delta sel pp: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat') rel ppl increase: verify=0.001463429663 table=0.001463429663 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') ppl table flip rate: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q6_K', 'imat', 'A') ppl table delta sel pp: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat') rel ppl increase: verify=0.004759997535 table=0.004759997535 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') ppl table flip rate: verify=0.003333333333 table=0.003333333333 diff=0.00e+00
+PASS ('phi35_mini', 'Q5_K_M', 'imat', 'A') ppl table delta sel pp: verify=-0.333333333333 table=-0.333333333333 diff=3.39e-15
+PASS ('phi35_mini', 'Q4_K_M', 'imat') rel ppl increase: verify=0.025586912317 table=0.025586912317 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') ppl table flip rate: verify=0.001666666667 table=0.001666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'imat', 'A') ppl table delta sel pp: verify=-0.166666666667 table=-0.166666666667 diff=7.24e-15
+PASS ('phi35_mini', 'Q3_K_M', 'imat') rel ppl increase: verify=0.080288372666 table=0.080288372666 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') ppl table flip rate: verify=0.010000000000 table=0.010000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'imat', 'A') ppl table delta sel pp: verify=1.000000000000 table=1.000000000000 diff=8.88e-16
+PASS ('phi35_mini', 'Q2_K', 'imat') rel ppl increase: verify=0.434407542054 table=0.434407542054 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') ppl table flip rate: verify=0.070000000000 table=0.070000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'imat', 'A') ppl table delta sel pp: verify=7.000000000000 table=7.000000000000 diff=6.22e-15
+PASS ('phi35_mini', 'Q4_K_M', 'noimat') rel ppl increase: verify=0.039620432559 table=0.039620432559 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') ppl table flip rate: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q4_K_M', 'noimat', 'A') ppl table delta sel pp: verify=0.000000000000 table=0.000000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat') rel ppl increase: verify=0.139303099390 table=0.139303099390 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') ppl table flip rate: verify=0.015000000000 table=0.015000000000 diff=0.00e+00
+PASS ('phi35_mini', 'Q3_K_M', 'noimat', 'A') ppl table delta sel pp: verify=1.500000000000 table=1.500000000000 diff=1.33e-15
+PASS ('phi35_mini', 'Q2_K', 'noimat') rel ppl increase: verify=0.725198718344 table=0.725198718344 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') ppl table flip rate: verify=0.056666666667 table=0.056666666667 diff=0.00e+00
+PASS ('phi35_mini', 'Q2_K', 'noimat', 'A') ppl table delta sel pp: verify=5.666666666667 table=5.666666666667 diff=7.99e-15
+
+1007 comparisons over 72 runs; 0 failures

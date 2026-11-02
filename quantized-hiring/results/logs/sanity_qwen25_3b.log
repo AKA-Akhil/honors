@@ -1,0 +1,29 @@
+  autotune qwen25_3b-F16.gguf: n_gpu_layers=28 -> 0.31 s per 450-token prompt
+  autotune qwen25_3b-F16.gguf: n_gpu_layers=26 -> 0.36 s per 450-token prompt
+  autotune qwen25_3b-F16.gguf: n_gpu_layers=24 -> 0.39 s per 450-token prompt
+  autotune qwen25_3b-F16.gguf: n_gpu_layers=22 -> 0.43 s per 450-token prompt
+  autotune qwen25_3b-F16.gguf: n_gpu_layers=20 -> 0.46 s per 450-token prompt
+  autotune qwen25_3b-F16.gguf: n_gpu_layers=18 -> 0.51 s per 450-token prompt
+  autotune qwen25_3b-F16.gguf: n_gpu_layers=16 -> 0.54 s per 450-token prompt
+  autotune qwen25_3b-F16.gguf: n_gpu_layers=12 -> 0.63 s per 450-token prompt
+('strong', 'WF', 0.9854, 1.0, 'Yes', 0.28)
+('strong', 'WM', 0.9909, 1.0, 'Yes', 0.28)
+('strong', 'WM', 0.8711, 1.0, 'Yes', 0.29)
+('strong', 'WM', 0.9858, 1.0, 'Yes', 0.29)
+('strong', 'BF', 0.9904, 1.0, 'Yes', 0.29)
+('borderline_high', 'BM', 0.0023, 1.0, 'No', 0.28)
+('borderline_high', 'WM', 0.0, 1.0, 'No', 0.28)
+('borderline_high', 'BM', 0.9913, 1.0, 'Yes', 0.29)
+('borderline_high', 'WM', 0.0, 1.0, 'No', 0.29)
+('borderline_high', 'BM', 0.5162, 1.0, 'Yes', 0.29)
+('borderline_low', 'WF', 0.0, 1.0, 'No', 0.27)
+('borderline_low', 'WF', 0.0, 1.0, 'No', 0.28)
+('borderline_low', 'BM', 0.0, 1.0, 'No', 0.29)
+('borderline_low', 'BM', 0.0, 1.0, 'No', 0.28)
+('borderline_low', 'BM', 0.0, 1.0, 'No', 0.29)
+('weak', 'BM', 0.0, 1.0, 'No', 0.27)
+('weak', 'BF', 0.0, 1.0, 'No', 0.26)
+('weak', 'WM', 0.0, 1.0, 'No', 0.27)
+('weak', 'BM', 0.0, 1.0, 'No', 0.27)
+('weak', 'WM', 0.0, 1.0, 'No', 0.27)
+qwen25_3b {'borderline_high': 0.30195999999999995, 'borderline_low': 0.0, 'strong': 0.96472, 'weak': 0.0} OK

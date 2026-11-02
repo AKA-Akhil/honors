@@ -1,0 +1,50 @@
+{
+  "Software Engineer": {
+    "description": "We are hiring a Software Engineer to design, build and maintain backend services and web applications. You will write clean, tested code, review pull requests and work with product teams. The role requires solid programming skills and experience with databases and cloud deployment. Candidates should be comfortable working in an agile team.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Git",
+      "REST APIs",
+      "AWS"
+    ],
+    "degree": "Bachelor's degree in Computer Science or related field",
+    "min_years": 3
+  },
+  "Registered Nurse": {
+    "description": "We are seeking a Registered Nurse to provide direct patient care on a busy medical-surgical unit. Duties include assessing patients, administering medications, maintaining accurate records and collaborating with physicians. A current state RN licence is required and experience in an acute-care setting is expected. The nurse will also educate patients and families about care plans.",
+    "required_skills": [
+      "Patient assessment",
+      "Medication administration",
+      "IV therapy",
+      "Electronic health records",
+      "BLS/CPR"
+    ],
+    "degree": "Bachelor's or Associate degree in Nursing with active RN licence",
+    "min_years": 3
+  },
+  "Financial Analyst": {
+    "description": "We are looking for a Financial Analyst to support budgeting, forecasting and reporting for our finance team. You will build financial models, analyse variances and prepare monthly reports for management. Strong Excel skills and an understanding of accounting principles are essential. The analyst will present findings to non-financial stakeholders.",
+    "required_skills": [
+      "Financial modelling",
+      "Excel",
+      "Forecasting",
+      "Variance analysis",
+      "SQL"
+    ],
+    "degree": "Bachelor's degree in Finance, Accounting or Economics",
+    "min_years": 3
+  },
+  "Administrative Assistant": {
+    "description": "We need an Administrative Assistant to provide day-to-day office support to a busy management team. Responsibilities include managing calendars, coordinating travel, preparing documents and handling correspondence. Excellent organisation, communication and proficiency with office software are required. The assistant will be the first point of contact for visitors and callers.",
+    "required_skills": [
+      "Calendar management",
+      "Microsoft Office",
+      "Business correspondence",
+      "Travel coordination",
+      "Records management"
+    ],
+    "degree": "High school diploma or Associate degree; Bachelor's preferred",
+    "min_years": 2
+  }
+}

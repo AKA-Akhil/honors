@@ -1,0 +1,155 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{textcomp}
+
+\begin{document}
+
+\title{Does Your 4-Bit Model Hire Differently? A Counterfactual Audit of Demographic Bias in GGUF-Quantized LLMs for Resume Screening}
+
+\author{\IEEEauthorblockN{Akhil Kurian Kuruvilla}
+\IEEEauthorblockA{Department of Computer Science and Engineering\\
+Karunya Institute of Technology and Sciences\\
+Coimbatore, India\\
+{[email]}}}
+
+\maketitle
+
+\begin{abstract}
+Small open language models are increasingly run locally as compressed GGUF files, but it is unknown whether aggressive quantization changes their hiring decisions. We audit Llama-3.2-3B-Instruct and Qwen2.5-3B-Instruct at five llama.cpp quantization levels (Q8\_0 to Q2\_K) using 50 synthetic resumes, each in four otherwise identical name-swapped variants (Bertrand--Mullainathan first names), two prompt wordings, and shortlisting probability P(Yes) read from next-token probabilities (4,000 scored prompts). Paired demographic gaps in P(Yes) stayed small at every level (at most 0.020 for gender and 0.036 for race, Template A) and showed no systematic trend with bit width. After Holm correction, gender gaps were significant for Llama at four of five levels (about one to two points, favouring women) and for Qwen at Q2\_K, whereas no race gap was significant. Individual decisions, however, changed substantially: up to 26.5\% of Qwen decisions flipped relative to Q8\_0 (Q3\_K\_M), almost all Yes$\to$No, and its selection rate fell from 32.5\% to 6.0\%, yet flips were not demographically unbalanced ($\chi^2$ $p\ge0.55$). Ranking by qualification survived quantization (AUC 1.0 everywhere). Aggregate fairness metrics can therefore hide large changes in who is shortlisted; practitioners should audit the exact quantized file they deploy.
+\end{abstract}
+
+\begin{IEEEkeywords}
+large language models, quantization, algorithmic fairness, hiring, GGUF, model compression
+\end{IEEEkeywords}
+
+\section{Introduction}
+Open-weight language models are now routinely deployed on consumer hardware in compressed GGUF format through llama.cpp \cite{gerganov}, Ollama and LM Studio. The same models are attractive for human-resources tooling: they keep applicant data on premises and cost little to run. Using language models to screen candidates is, however, a high-stakes setting in which bias auditing has been studied \cite{koh2023}, and the classic field experiment of Bertrand and Mullainathan \cite{bertrand2004} shows that names alone can change employer responses.
+
+Quantization is the step that makes local deployment possible, and it perturbs every weight of the model. Prior work on how compression affects social bias relies mostly on benchmark-style evaluations such as BBQ \cite{parrish2022} and on quantizers such as GPTQ, AWQ and LLM.int8() \cite{frantar2022,lin2024,dettmers2022}. One recent study explicitly lists hiring-decision scenarios as future work \cite{alhakim2026}. To our knowledge, no study has audited \emph{hiring decisions} made by \emph{GGUF k-quant} models, the format most used for local inference.
+
+We ask four research questions. \textbf{RQ1:} do demographic gaps in shortlisting probability (gender and race-signalling first names) change as quantization becomes more aggressive? \textbf{RQ2:} how often do individual shortlisting decisions flip relative to the near-lossless Q8\_0 reference, and are flips demographically balanced? \textbf{RQ3:} does the model still rank candidates by qualification, i.e.\ is any change separate from general capability loss? \textbf{RQ4:} are the findings stable across two prompt wordings?
+
+\emph{Contributions.}
+\begin{itemize}
+\item A counterfactual audit protocol for quantized local LLMs: name-swapped synthetic resumes with paired analysis and probability-based (not sampled) decisions.
+\item The first audit, to our knowledge, of hiring decisions across the GGUF k-quant ladder (Q8\_0, Q6\_K, Q4\_K\_M, Q3\_K\_M, Q2\_K) for two 3B-parameter instruction-tuned models.
+\item Evidence that decision-level instability (flip rates up to 26.5\%, shifts in selection rate) can be large while demographic gaps remain small and unflipped-by-group, so aggregate bias metrics alone are insufficient for deployment checks.
+\item Full code, data generator and raw per-prompt outputs for reproduction.
+\end{itemize}
+
+\section{Related Work}
+\subsection{Bias in LLM hiring and resume screening}
+Resume-audit experiments with name-swapped applications \cite{bertrand2004} are the template for our design. Koh et al.\ \cite{koh2023} propose BAD, a bias-detection approach for language models in the context of candidate screening. We follow the counterfactual logic of this line of work but add the quantization level as an experimental factor.
+
+\subsection{Quantization methods}
+Post-training weight quantization methods such as GPTQ \cite{frantar2022} and AWQ \cite{lin2024}, and 8-bit inference with LLM.int8() \cite{dettmers2022}, reduce memory and latency. llama.cpp \cite{gerganov} uses block-wise integer formats (``k-quants'', e.g.\ Q4\_K\_M) distributed as GGUF files. Kurt \cite{kurt2026} evaluates llama.cpp quantization on Llama-3.1-8B-Instruct; our work instead focuses on fairness in a hiring task.
+
+\subsection{Quantization and bias}
+Gon\c{c}alves and Strubell \cite{goncalves2023} and Ramesh et al.\ \cite{ramesh2023} study how compression affects social bias and fairness in language models; Hong et al.\ \cite{hong2024} scrutinize the trustworthiness of compressed LLMs; Kirsten et al.\ \cite{kirsten2025} study the impact of inference acceleration on bias. More recent work examines how quantization shapes bias \cite{marcuzzi2026}, relates bias changes in quantized models to uncertainty \cite{hua2026}, reports bias emergence in compressed models across precision levels \cite{rath2026}, and proposes protecting critical weights to preserve fairness and safety \cite{alhakim2026}. We differ in three ways: the task is a \emph{decision} (shortlist or not) rather than a benchmark question; the quantizer is the GGUF k-quant family; and we analyse decision flips relative to a high-precision reference in addition to group averages.
+
+\section{Methodology}
+\subsection{Models and quantization levels}
+We use Llama-3.2-3B-Instruct and Qwen2.5-3B-Instruct in GGUF form at Q8\_0 (reference), Q6\_K, Q4\_K\_M, Q3\_K\_M and Q2\_K. Qwen files come from the \texttt{bartowski} repository; the \texttt{bartowski} Llama repository lacks Q2\_K and Q3\_K\_M, so all five Llama levels come from \texttt{unsloth/Llama-3.2-3B-Instruct-GGUF} (Section~\ref{sec:lim}). Inference uses llama-cpp-python 0.3.36 with CUDA on an RTX 4050 Laptop GPU (6\,GB), context 2048, seed 42.
+
+\subsection{Synthetic resumes and counterfactual names}
+A seeded template generator produces 50 resumes for four roles (13 Software Engineer, 13 Registered Nurse, 12 Financial Analyst, 12 Administrative Assistant) with different occupational gender stereotypes. Each resume has a qualification tier, rotated evenly within each role: \emph{strong} (all requirements, 5--9 years, 4--5 matching skills), \emph{borderline} (2--4 years, 3 matching skills) or \emph{weak} (0--1 years, 1--2 matching skills). Resumes contain no photos, ages, addresses, pronouns or gendered activities. For each resume we draw one first name from each of four groups (White female, Black female, White male, Black male; WF, BF, WM, BM) from the Bertrand--Mullainathan list \cite{bertrand2004}, with an identical surname across the four variants. The name and the e-mail built from it are the \emph{only} differences between variants, giving 200 candidate variants.
+
+\subsection{Prompts and P(Yes) extraction}
+Two wordings are used. Template A: an HR-assistant system prompt and ``Should this candidate be shortlisted for an interview? Answer Yes or No.'' Template B: a recruiter system prompt and ``Would you advance this applicant to the next round? Reply Yes or No.'' with the same information. Each model--level pair thus scores $200\times2=400$ prompts, 4,000 in total.
+
+The prompt is formatted with the model's own chat template. Because the chat-completion log-probability API requires \texttt{logits\_all=True} in llama-cpp-python, we instead evaluate the prompt and read the full next-token logits from the context, apply a softmax over the whole vocabulary, and sum the probability of every token whose stripped, lower-cased text is ``yes'' (resp.\ ``no''). We define $P(\mathrm{Yes})=p_{\text{yes}}/(p_{\text{yes}}+p_{\text{no}})$ and the decision as $P(\mathrm{Yes})\ge0.5$. No prompt returned NaN.
+
+\subsection{Metrics and tests}
+\emph{Capability:} mean P(Yes) per tier, Spearman correlation between tier and P(Yes), and AUC for strong vs.\ weak. \emph{Gaps:} within each resume, gender gap $=\tfrac{WM+BM}{2}-\tfrac{WF+BF}{2}$ and race gap $=\tfrac{WF+WM}{2}-\tfrac{BF+BM}{2}$, averaged over resumes, with 95\% bootstrap CIs (1,000 resamples over resumes, seed 42) and Wilcoxon signed-rank tests. \emph{Selection:} rate per group at 0.5 and at a reference-calibrated threshold (median Q8\_0 P(Yes)), and the impact ratio (lowest/highest group rate; four-fifths rule). \emph{Flips:} share of prompts whose decision differs from Q8\_0, exact McNemar tests, and a $\chi^2$ test of equal Yes$\to$No flips across groups. \emph{Robustness:} correlation of Template A and B gaps. Holm--Bonferroni correction is applied within each family of tests (the 40 gap tests; the McNemar tests per threshold). Table~\ref{tab:setup} summarises the setup.
+
+\begin{table}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Experimental setup.}\label{tab:setup}
+\begin{tabular}{ll}
+\toprule
+Models & Llama-3.2-3B-Instruct, Qwen2.5-3B-Instruct (GGUF)\\
+Levels & Q8\_0 (ref.), Q6\_K, Q4\_K\_M, Q3\_K\_M, Q2\_K\\
+Resumes & 50 synthetic (4 roles, 3 tiers)\\
+Variants & 4 name groups (WF, BF, WM, BM) per resume\\
+Templates & A and B; 200 prompts per template per run\\
+Runs & 2 models $\times$ 5 levels $\times$ 2 templates = 20\\
+Prompts scored & 4,000 (0 NaN)\\
+Decision score & $P(\mathrm{Yes})$ from full next-token logits\\
+Seed / hardware & 42 / RTX 4050 Laptop GPU (6\,GB)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Results}
+All figures below are Template A unless stated otherwise; Template B tables are in the repository (\texttt{results/tables}).
+
+\subsection{RQ1: demographic gaps across quantization levels}
+Table~\ref{tab:gapsA} and Fig.~\ref{fig:gaps} show paired gaps. Every gap is small: the largest absolute gender gap is 0.020 (Qwen Q4\_K\_M, $+0.020$; Qwen Q2\_K, $-0.020$; Llama Q4\_K\_M, $-0.019$) and the largest race gap is $+0.036$ (Qwen Q2\_K, 95\% CI $[+0.001,+0.077]$). For Llama the gender gap is negative (women favoured) at all five levels: $-0.011$ at Q8\_0 (CI $[-0.019,-0.005]$), $-0.013$, $-0.019$, $-0.012$ and $-0.003$ (CI $[-0.013,+0.004]$) at Q2\_K. Holm-corrected Wilcoxon tests are significant at Q8\_0, Q6\_K, Q4\_K\_M and Q3\_K\_M, so this slight female advantage is already present in the reference model rather than introduced by quantization, and it is not larger at lower precision. For Qwen the gender gap changes sign across levels ($+0.004$, $+0.001$, $+0.020$, $-0.017$, $-0.020$) with bootstrap intervals that mostly include zero; only Q2\_K is Holm-significant ($p=0.005$) even though its bootstrap CI $[-0.044,+0.003]$ narrowly includes zero, a discrepancy that reflects heavy-tailed per-resume differences (most are near zero; a few are large). No race gap is significant after Holm correction at any level. Descriptively by role (small $n$, no tests), the largest single-role gap was for Llama Q4\_K\_M with Registered Nurses ($-0.047$) and for Qwen Q4\_K\_M with Financial Analysts ($+0.069$; \texttt{gaps\_by\_job.csv}). Overall we find no monotone increase of demographic gaps with more aggressive quantization.
+
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Paired gaps in P(Yes), Template A. Gender gap = men $-$ women; race gap = White-named $-$ Black-named. Bootstrap CIs over 50 resumes; Wilcoxon signed-rank $p$ with Holm correction over all 40 tests.}\label{tab:gapsA}
+\input{tables/tab_gaps_A_body.tex}
+\end{table*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/fig1_gaps_vs_level.pdf}
+\caption{Paired gender and race gaps in P(Yes) with 95\% bootstrap CIs across quantization levels (Template A).}\label{fig:gaps}
+\end{figure*}
+
+\subsection{RQ2: decision flips relative to Q8\_0}
+Decisions are far less stable than group averages (Table~\ref{tab:flips}, Fig.~\ref{fig:flips}). Template A flip rates for Llama are 0.000, 0.010, 0.055 and 0.065 at Q6\_K, Q4\_K\_M, Q3\_K\_M and Q2\_K; for Qwen they are 0.005, 0.045, 0.265 and 0.140. Averaged over the eight non-reference Template A runs, 7.3\% of decisions flip (9.25\% in Template B; maximum 0.265 and 0.195 respectively). Flips are strongly directional: Llama flips are almost all No$\to$Yes (e.g.\ 0/11 Yes$\to$No/No$\to$Yes at Q3\_K\_M), making it more permissive, whereas Qwen flips are almost all Yes$\to$No (53/0 at Q3\_K\_M), making it more conservative. Exact McNemar tests are Holm-significant for Llama at Q3\_K\_M ($p=0.009$) and Q2\_K ($p=0.027$) and for Qwen at Q4\_K\_M ($p=0.027$), Q3\_K\_M and Q2\_K ($p<0.001$). Flips are not demographically unbalanced where testable: Yes$\to$No flips for Qwen are spread across WF/BF/WM/BM as 13/12/13/15 at Q3\_K\_M ($\chi^2$ $p=0.949$), with $p=0.550$ at Q4\_K\_M and $p=0.709$ at Q2\_K. For Llama there are too few Yes$\to$No flips (at most one) for a group test. The mean absolute change in P(Yes) rises from 0.006 (Llama Q6\_K) to 0.073 (Llama Q2\_K), and for Qwen peaks at 0.259 (Q3\_K\_M).
+
+\begin{table}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Decision flips versus Q8\_0 (Template A, threshold 0.5, 200 prompts per run). ``--'': undefined (no discordant pairs) or fewer than 4 Y$\to$N flips for the group test.}\label{tab:flips}
+\input{tables/tab_flips_A_body.tex}
+\end{table}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/fig2_flips_vs_level.pdf}
+\caption{Share of decisions flipped relative to Q8\_0, split by direction (Template A, threshold 0.5).}\label{fig:flips}
+\end{figure*}
+
+\subsection{RQ3: capability and calibration}
+Ranking by qualification is preserved (Table~\ref{tab:cap}, Fig.~\ref{fig:cap}). The AUC for strong vs.\ weak is 1.000 for all 20 runs and Spearman $\rho$ stays within 0.911--0.926 (Llama) and 0.826--0.900 (Qwen). Because strong and weak resumes are fully separable, AUC cannot detect degradation here; the informative changes are in calibration. Llama becomes more permissive: mean P(Yes) for borderline candidates rises from 0.380 (Q8\_0) to 0.528 (Q3\_K\_M) and 0.503 (Q2\_K), and for weak candidates from 0.000 to 0.010 at Q2\_K. Qwen becomes more conservative in a non-monotone way: mean P(Yes) for strong candidates is 0.839, 0.827, 0.677, 0.172 and 0.522 from Q8\_0 to Q2\_K, and the overall selection rate falls from 0.325 to 0.060 at Q3\_K\_M before recovering to 0.205 at Q2\_K. At threshold 0.5 the impact ratio falls below 0.8 for Qwen at Q3\_K\_M (0.500) and Q2\_K (0.615), but these ratios rest on very few selected candidates (e.g.\ 6.0\% selection), and the gap tests above show no consistent matching group differences. Hence the bias-related changes we observe are separable from, and much smaller than, calibration shifts; the reference-calibrated threshold (median Q8\_0 P(Yes)) is degenerate for Qwen Q2\_K, where it selects every candidate (flip rate 0.500), because the Q8\_0 median lies in the near-zero mass of a strongly bimodal distribution.
+
+\begin{table}[t]
+\centering\footnotesize\setlength{\tabcolsep}{2pt}
+\caption{Capability and selection (Template A). Mean P(Yes) by qualification tier, Spearman $\rho$ (tier vs P(Yes)), AUC strong vs weak, overall selection rate at threshold 0.5 and impact ratio (IR); $^{\dagger}$: IR $<0.8$.}\label{tab:cap}
+\input{tables/tab_capability_A_body.tex}
+\end{table}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/fig3_capability.pdf}
+\caption{Mean P(Yes) by qualification tier (left) and strong-vs-weak AUC (right) across quantization levels (Template A).}\label{fig:cap}
+\end{figure*}
+
+\subsection{RQ4: robustness to prompt wording}
+Template B reproduces the qualitative picture but not every detail. Across the ten model--level pairs, Template A and B gender gaps correlate at Pearson $r=0.516$ ($p=0.127$; Spearman $\rho=0.479$, $p=0.162$) with the same sign in 8 of 10 pairs; race gaps are uncorrelated ($r=-0.128$, $p=0.725$; same sign in 7 of 10). Of the gaps with raw $p<0.05$ in either template, signs agree in 5 of 5 gender cases and 3 of 4 race cases. In Template B, Holm-significant gaps are again limited to Llama gender gaps (four levels, $-0.004$ to $-0.009$ in magnitude), with no Holm-significant race gap. Flip rates are similar in size (Template B maximum 0.195) but direction can differ by template: Qwen Q4\_K\_M flips 9/0 (Yes$\to$No/No$\to$Yes) in Template A but 0/30 in Template B, and the Qwen Q8\_0 mean P(Yes) for strong candidates is 0.839 in Template A but 0.549 in Template B. With only ten model--level pairs the correlations are imprecise, so the stability of small gaps across wordings should be considered unproven.
+
+\section{Discussion}
+For practitioners, the main message is that the same model file family can behave as a different screener at each quantization level, even when demographic gap averages look reassuring. A Q3\_K\_M Qwen model shortlisted 6.0\% of candidates versus 32.5\% at Q8\_0 under an identical prompt; any downstream threshold, quota or human-review workload tuned on one file would be mis-specified for another. Flips matter even when averages do not change because a hiring pipeline acts on individual decisions: about one in fourteen decisions changes on average (Template A, threshold 0.5), and a person affected by a flip has no way to know the file changed. The slight female advantage of Llama is a property of the reference model that quantization neither removed nor magnified; the finding that flips are balanced across name groups is reassuring but should not be taken as evidence of fairness, because we have no ground truth and the model already varies across wordings. We recommend auditing the exact quantized file and prompt that will be deployed, reporting selection rate and flip rate alongside bias metrics, and re-auditing whenever the file, quantizer or prompt changes.
+
+\section{Limitations}\label{sec:lim}
+Resumes are synthetic and template-generated, so they are cleaner and more homogeneous than real applications; AUC saturates at 1.0, which limits the capability check. First names are an imperfect proxy for race and gender; gender is treated as binary and the names are US-centric. Within each resume only one name per group is drawn, so name identity is confounded with group at the resume level. We evaluate two small (3B) models, two prompt templates and a single-token Yes/No format with no human baseline. The reference level is Q8\_0, not full precision. With 50 resumes, gap estimates are imprecise and the Wilcoxon and bootstrap analyses can disagree. Reference-calibrated thresholds are unstable for bimodal score distributions (Qwen Q2\_K). Run-time deviations from the plan: (i) the \texttt{bartowski} Llama repository lacks Q2\_K and Q3\_K\_M, so Llama files come from \texttt{unsloth} while Qwen files come from \texttt{bartowski}; we did not verify whether the two repositories use identical quantization recipes (for example importance matrices), so cross-model comparisons of levels should be made cautiously; (ii) log-probabilities were read directly from logits because the chat API requires \texttt{logits\_all=True}; (iii) the Hugging Face Xet backend was disabled for downloads on a slow connection. No inference-time reductions from the planned fallbacks were needed.
+
+\section{Ethics Statement}
+Names are used solely as experimental signals in a counterfactual design; all resumes and employers are synthetic and no real person's data were used. The results characterise the behaviour of specific model files in a laboratory setting and must not be used to justify automated hiring decisions or to certify any system as fair.
+
+\section{Conclusion}
+Across 4,000 scored prompts, GGUF quantization from Q8\_0 to Q2\_K did not produce a systematic increase in gender or race gaps for two 3B models, and qualification ranking survived. Individual decisions and selection rates, however, shifted substantially and directionally with model and prompt wording, without being demographically unbalanced. Future work should test larger models, additional quantizers, real anonymised resumes with human baselines, finer-grained threshold calibration, and mitigation through calibration data.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,3 @@
+llama32_3b: llama-imatrix -f wikitext2_train.txt --chunks 100 -c 512 -ngl 99
+qwen25_3b: llama-imatrix -f wikitext2_train.txt --chunks 100 -c 512 -ngl 99
+phi35_mini: llama-imatrix -f wikitext2_train.txt --chunks 100 -c 512 -ngl 99

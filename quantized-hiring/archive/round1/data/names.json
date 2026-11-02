@@ -1,0 +1,59 @@
+{
+  "first_names": {
+    "WF": [
+      "Emily",
+      "Anne",
+      "Jill",
+      "Allison",
+      "Laurie",
+      "Sarah",
+      "Meredith",
+      "Carrie",
+      "Kristen"
+    ],
+    "BF": [
+      "Lakisha",
+      "Latoya",
+      "Tamika",
+      "Imani",
+      "Ebony",
+      "Shanice",
+      "Aisha",
+      "Keisha",
+      "Kenya"
+    ],
+    "WM": [
+      "Greg",
+      "Brendan",
+      "Geoffrey",
+      "Brett",
+      "Jay",
+      "Matthew",
+      "Neil",
+      "Todd"
+    ],
+    "BM": [
+      "Jamal",
+      "Darnell",
+      "Hakim",
+      "Jermaine",
+      "Kareem",
+      "Leroy",
+      "Rasheed",
+      "Tremayne",
+      "Tyrone"
+    ]
+  },
+  "surnames": [
+    "Miller",
+    "Johnson",
+    "Brown",
+    "Davis",
+    "Clark",
+    "Lewis",
+    "Walker",
+    "Hall",
+    "Young",
+    "Allen"
+  ]
+}

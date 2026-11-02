@@ -1,0 +1,43 @@
+runs with excluded prompts:
+          model level  recipe template  share_excluded  sel_rate_all  sel_rate_filtered  gender_gap_all  gender_gap_filtered  race_gap_all  race_gap_filtered
+54   qwen25_3b  Q2_K  noimat        A          1.0000          0.00                NaN          0.0001                  NaN        0.0002                NaN
+30  phi35_mini  Q2_K  noimat        A          0.0533          0.67             0.6849         -0.0029              -0.0034       -0.0018            -0.0004
+main (imat/ref) runs with exclusions: 0
+                                 subset            target   n  spearman_rho      p
+0            imatrix levels, all models  abs_delta_sel_pp  18         0.729  0.001
+1            imatrix levels, all models         flip_rate  18         0.770  0.000
+2   all quantized runs incl. no-imatrix  abs_delta_sel_pp  27         0.786  0.000
+3   all quantized runs incl. no-imatrix         flip_rate  27         0.790  0.000
+4                   imatrix, excl. Qwen  abs_delta_sel_pp  12         0.799  0.002
+5                   imatrix, excl. Qwen         flip_rate  12         0.878  0.000
+6       imatrix, excl. Qwen Q2_K/Q3_K_M  abs_delta_sel_pp  16         0.634  0.008
+7       imatrix, excl. Qwen Q2_K/Q3_K_M         flip_rate  16         0.696  0.003
+8              within llama32_3b (imat)  abs_delta_sel_pp   6         0.657  0.156
+9              within llama32_3b (imat)         flip_rate   6         0.943  0.005
+10              within qwen25_3b (imat)  abs_delta_sel_pp   6         0.886  0.019
+11              within qwen25_3b (imat)         flip_rate   6         0.886  0.019
+12             within phi35_mini (imat)  abs_delta_sel_pp   6         0.928  0.008
+13             within phi35_mini (imat)         flip_rate   6         0.928  0.008
+         model   level recipe      ppl  ppl_f16  rel_ppl_increase  delta_sel_pp  abs_delta_sel_pp  flip_rate  size_gb
+5   llama32_3b  Q3_K_M   imat  10.8934  10.3177            0.0558        0.1667            0.1667     0.0117    1.687
+15   qwen25_3b  Q3_K_M   imat  12.7838   8.2613            0.5474      -29.0000           29.0000     0.2900    1.590
+25  phi35_mini  Q3_K_M   imat   7.0128   6.4916            0.0803        1.0000            1.0000     0.0100    1.963
+         model   level  rel_ppl_increase  delta_sel_pp  flip_rate
+1   llama32_3b    Q8_0             0.002         0.000      0.000
+2   llama32_3b    Q6_K             0.004        -0.333      0.003
+3   llama32_3b  Q5_K_M             0.008         0.667      0.007
+4   llama32_3b  Q4_K_M             0.020        -1.667      0.017
+5   llama32_3b  Q3_K_M             0.056         0.167      0.012
+6   llama32_3b    Q2_K             0.412         2.167      0.022
+11   qwen25_3b    Q8_0             0.002         1.167      0.012
+12   qwen25_3b    Q6_K             0.008         1.500      0.018
+13   qwen25_3b  Q5_K_M             0.019        -5.500      0.055
+14   qwen25_3b  Q4_K_M             0.037        -1.833      0.032
+15   qwen25_3b  Q3_K_M             0.547       -29.000      0.290
+16   qwen25_3b    Q2_K             0.340       -37.333      0.373
+21  phi35_mini    Q8_0            -0.003         0.000      0.000
+22  phi35_mini    Q6_K             0.001         0.000      0.000
+23  phi35_mini  Q5_K_M             0.005        -0.333      0.003
+24  phi35_mini  Q4_K_M             0.026        -0.167      0.002
+25  phi35_mini  Q3_K_M             0.080         1.000      0.010
+26  phi35_mini    Q2_K             0.434         7.000      0.070

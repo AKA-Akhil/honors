@@ -1,0 +1,4 @@
+model,source_repo,source_file,how,source_sha256,source_size_bytes,f16_file,f16_sha256,f16_size_bytes
+llama32_3b,bartowski/Llama-3.2-3B-Instruct-GGUF,Llama-3.2-3B-Instruct-f16.gguf,downloaded F16 (file renamed to <key>-F16.gguf),,,llama32_3b-F16.gguf,b5ebe8fbb5ab5f05aaa056948668c5f7443df9d0883497f1d9c05f57fb8ea6cd,6433687840
+qwen25_3b,bartowski/Qwen2.5-3B-Instruct-GGUF,Qwen2.5-3B-Instruct-f16.gguf,downloaded F16 (file renamed to <key>-F16.gguf),,,qwen25_3b-F16.gguf,25908e409af8c952a17c8fda44b90e699565a90436431574f44c25d140aa5032,6178317216
+phi35_mini,bartowski/Phi-3.5-mini-instruct-GGUF,Phi-3.5-mini-instruct-f32.gguf,no F16 GGUF published: F32 GGUF downloaded and converted to F16 with llama-quantize,cb1b41ad243c37be329d6accb7a9a857e2c7c883d60a78aa80e718695444ce39,15285057024,phi35_mini-F16.gguf,062a92a06768a3974ab5ea45768e8416337cccb8ab33703d5642420411a32864,7643297280

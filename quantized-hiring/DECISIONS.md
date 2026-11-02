@@ -1,0 +1,54 @@
+# DECISIONS (Round 2)
+- Round 1 archived to `archive/round1/` (results, data, STATUS, DECISIONS moved; scripts and config copied). `paper/` untouched (reflects round 1, outdated).
+- Deleted the round-1 model files in `models/` (~22 GB, per spec 2.3) to make room.
+- **llama.cpp tools:** GitHub's "latest release" (v0.8.0) is a marker with no binaries, so the newest numbered release was used: **b11972** (commit cf24317be, built with Clang 20.1.8). `llama-quantize` uses the CPU x64 build (all models, same binary); `llama-imatrix` and `llama-perplexity` use the CUDA 12.4 x64 build (+ cudart). Source for `convert_hf_to_gguf.py` shallow-cloned to `tools/llama.cpp-src/` at tag b11972 (not needed in the end).
+- **Inference engine differs from the quantizer build:** inference uses llama-cpp-python 0.3.36 (its bundled llama.cpp), not b11972. Quantized files are standard GGUF k-quants and load fine; recorded as a threat to validity.
+- **Full-precision sources:** Llama and Qwen from `bartowski/*-GGUF` F16 files (no F16 in `Qwen/Qwen2.5-3B-Instruct-GGUF`; `unsloth` Llama also has F16 but bartowski was first in the preference order). **Phi-3.5-mini:** bartowski publishes only F32 (no F16/BF16), so the F32 GGUF was downloaded (smaller conversion risk than installing torch + converting safetensors) and converted with `llama-quantize ... F16`. F32->F16 rounding is the same as bf16->F16 directly because bf16->F32 is exact. All three references are therefore F16.
+- **Downloads:** `HF_HUB_DISABLE_XET=1` and hf_transfer (speed 1-9 MB/s varying).
+- **imatrix:** WikiText-2 raw train text (10.9 MB, from `Salesforce/wikitext`, `wikitext-2-raw-v1`), `llama-imatrix --chunks 100 -c 512 -ngl 99` (GPU, auto-fit of layers). Same settings for every model. **Q8_0 does not use the imatrix** (file still named `-imat` for consistency). Perplexity: `llama-perplexity` on WikiText-2 test, `--chunks 50 -c 512`, auto-fit GPU offload, same for every file.
+- **Levels:** imatrix recipe Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q3_K_M, Q2_K; no-imatrix ablation Q4_K_M, Q3_K_M, Q2_K with Template A only (as specified).
+- Quantized filenames: `models/<key>/<key>-<LEVEL>-<imat|noimat>.gguf`; reference `models/<key>/<key>-F16.gguf` (the downloaded file was renamed; original names recorded in `results/model_provenance.csv`).
+- **Execution order:** one GPU, so models are processed strictly sequentially by `scripts/run_all.sh` (quantize+perplexity -> sanity -> inference -> determinism -> delete quantized files). F16 files are kept until the end (disk > 30 GB free expected).
+- Resume-level bootstrap (2,000 resamples, seed 42) with identical resample indices for every statistic; Holm families listed in `results/tables/families.md`.
+- **F16 speed / incident:** the 6.4-7.6 GB F16 files exceed the 6 GB VRAM. Full offload (`n_gpu_layers=-1`) made the driver page weights (~4 s/prompt when the GPU was otherwise idle, ~10 s while another GPU job ran). Two pipeline instances had briefly overlapped (a stopped task's shell survived and kept running; it ran the qwen imatrix on the GPU at the same time as llama F16 inference), which contaminated my first speed benchmarks and the first 50 F16 rows. Fix: partial F16 results were deleted and re-run from scratch; inference now auto-tunes `n_gpu_layers` for files > 5 GB by timing (cached in `results/ngl_cache.json`; clean benchmark for Llama F16: -1: 4.0 s, 28: 1.8 s, 26: 1.3 s, 24: 0.28 s, 22: 0.33 s per 450-token prompt); `scripts/run_all.sh` now takes a lock so two instances cannot run. Partial CPU/GPU offload only changes floating-point summation order (checked by the determinism test), not the model.
+- n_gpu_layers=24 for llama32_3b-F16.gguf (auto-tuned by timing: 0.28 s per 450-token prompt; full offload spills VRAM and is ~10x slower)
+- n_gpu_layers=-1 for llama32_3b-Q8_0-imat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q6_K-imat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q5_K_M-imat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q4_K_M-imat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q3_K_M-imat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q2_K-imat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q4_K_M-noimat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q3_K_M-noimat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q2_K-noimat.gguf
+- n_gpu_layers=-1 for llama32_3b-Q4_K_M-imat.gguf
+- n_gpu_layers=28 for qwen25_3b-F16.gguf (auto-tuned by timing: 0.31 s per 450-token prompt; full offload spills VRAM and is ~10x slower)
+- n_gpu_layers=-1 for qwen25_3b-Q8_0-imat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q6_K-imat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q5_K_M-imat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q4_K_M-imat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q3_K_M-imat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q2_K-imat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q4_K_M-noimat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q3_K_M-noimat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q2_K-noimat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q4_K_M-imat.gguf
+- n_gpu_layers=22 for phi35_mini-F16.gguf (auto-tuned by timing: 0.53 s per 450-token prompt; full offload spills VRAM and is ~10x slower)
+- n_gpu_layers=-1 for phi35_mini-Q8_0-imat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q6_K-imat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q5_K_M-imat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q4_K_M-imat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q3_K_M-imat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q2_K-imat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q4_K_M-noimat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q3_K_M-noimat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q2_K-noimat.gguf
+- n_gpu_layers=-1 for phi35_mini-Q4_K_M-imat.gguf
+- [final] Kept F16 GGUFs and imatrix files (>30 GB free, 142 GB); quantized GGUFs deleted. Mixed-model non-convergence reported, not hidden; mixed models treated as supporting evidence only.
+- n_gpu_layers=-1 for qwen25_3b-Q3_K_M-imat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q3_K_M-imat.gguf
+- n_gpu_layers=-1 for qwen25_3b-Q2_K-imat.gguf
+- [pre-paper] Mass filter threshold 0.5 as specified; filtered gaps use resumes with all 4 variants retained, flips use prompts retained in both runs.
+- [pre-paper] Undefined rule: impact ratio and selection gaps are NaN if ANY group rate is exactly 0 or 1 (both thresholds). Paired P(Yes) gaps stay defined (continuous).
+- [pre-paper] Free-text classifier: first word (after punctuation) Yes/No = clear, else "other". 60 prompts balanced (15/tier, 15/group), seed 42. Version check pre-tokenises with the round-2 tokenizer/template and sends token ids to llama-server (n_probs 300).
+- [pre-paper] Mixed models: kept original specification; optimizer ladder sufficed, OLS fallback unused. Stopped only my own duplicate python processes (a blanket taskkill was denied by the harness).

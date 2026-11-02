@@ -1,0 +1,5 @@
+gap,n_pairs,pearson_r,pearson_p,spearman_rho,spearman_p,sign_agree
+gender_gap,10,0.5160661071949586,0.1267612335782615,0.4787878787878787,0.16152292801745594,8
+race_gap,10,-0.1276106822265152,0.725353177090458,0.05454545454545454,0.8810361811618526,7
+gender_significant_either,5,,,,,5
+race_significant_either,4,,,,,3

@@ -1,0 +1,15 @@
+\begin{tabular}{llrrrrrrrrlr}
+\toprule
+model & template & n & n\_flips & coef\_abs\_dev & odds\_ratio\_per\_0\_1 & or\_lo & or\_hi & p\_raw & group\_wald\_p & spec & p\_holm \\
+\midrule
+llama32\_3b & A & 3600 & 36 & -12.656 & 0.282 & 0.196 & 0.405 & 0.000 & 0.275 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.000 \\
+llama32\_3b & B & 3600 & 76 & -14.042 & 0.246 & 0.189 & 0.319 & 0.000 & 0.107 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.000 \\
+llama32\_3b & C & 3600 & 109 & -12.805 & 0.278 & 0.202 & 0.382 & 0.000 & 0.005 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.000 \\
+phi35\_mini & A & 3600 & 51 & -10.961 & 0.334 & 0.128 & 0.873 & 0.025 & 0.115 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.025 \\
+phi35\_mini & B & 3600 & 34 & -13.003 & 0.272 & 0.215 & 0.345 & 0.000 & 0.293 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.000 \\
+phi35\_mini & C & 3600 & 39 & -14.699 & 0.230 & 0.169 & 0.312 & 0.000 & 0.219 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.000 \\
+qwen25\_3b & A & 3600 & 468 & -9.437 & 0.389 & 0.285 & 0.531 & 0.000 & 0.257 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.000 \\
+qwen25\_3b & B & 3600 & 573 & -8.768 & 0.416 & 0.325 & 0.533 & 0.000 & 0.122 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.000 \\
+qwen25\_3b & C & 3600 & 397 & -7.646 & 0.466 & 0.403 & 0.537 & 0.000 & 0.042 & logit(flipped \textasciitilde \space abs(p\_yes\_F16-0.5) + group + level), SE clustered by resume; pooled over imat levels & 0.000 \\
+\bottomrule
+\end{tabular}

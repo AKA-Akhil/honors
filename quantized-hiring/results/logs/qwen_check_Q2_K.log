@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\asus\Desktop\quantized-hiring\scripts\10_qwen_check.py", line 20, in <module>
+    meta = raw["F16"][["tier", "group", "resume_id"]]
+           ~~~^^^^^^^
+KeyError: 'F16'

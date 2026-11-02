@@ -1,0 +1,14 @@
+CMD: C:\Users\asus\Desktop\quantized-hiring\tools\llama.cpp\cuda\llama-perplexity.exe -m C:\Users\asus\Desktop\quantized-hiring\models\phi35_mini\phi35_mini-Q3_K_M-noimat.gguf -f C:\Users\asus\Desktop\quantized-hiring\data\calibration\wikitext2_test.txt --chunks 50 -c 512 -ngl 99
+0.13 minutes
+[1]6.2935,[2]7.5383,[3]8.1836,[4]9.1339,[5]8.7343,[6]8.3930,[7]8.6365,[8]8.6275,[9]8.8262,[10]9.1514,[11]9.2315,[12]9.0946,[13]9.0625,[14]9.2485,[15]9.3997,[16]9.1730,[17]9.0043,[18]8.9496,[19]8.4994,[20]8.5038,[21]8.3585,[22]8.2437,[23]8.1117,[24]8.0694,[25]7.9612,[26]7.8765,[27]7.6874,[28]7.6624,[29]7.4914,[30]7.3565,[31]7.2840,[32]7.3279,[33]7.2811,[34]7.3047,[35]7.2410,[36]7.2784,[37]7.3011,[38]7.3183,[39]7.3450,[40]7.3809,[41]7.4325,[42]7.4454,[43]7.4071,[44]7.5070,[45]7.4559,[46]7.4111,[47]7.4104,[48]7.3948,[49]7.3590,[50]7.3959,
+
+
+0.00.231.745 W load_arch_hparams: Phi SWA is currently disabled - results might be suboptimal for some models (see https://github.com/ggml-org/llama.cpp/pull/13676)
+0.00.235.417 W load: control-looking token:      2 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.334.577 I cmn          init: llama threadpool init, n_threads = 14
+0.01.381.000 I 
+0.01.381.040 I system_info: n_threads = 14 (n_threads_batch = 14) / 20 | CUDA : ARCHS = 500,610,700,750,800,860,890,900 | USE_GRAPHS = 1 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.381.045 I perplexity: tokenizing the input ..
+0.02.053.013 I perplexity: tokenization took 671.954 ms
+0.02.053.695 I perplexity: calculating perplexity over 50 chunks, n_ctx=512, batch_size=2048, n_seq=4
+0.02.726.003 I perplexity: 0.67 seconds per pass - ETA 0.10.090.699 I Final estimate: PPL = 7.3959 +/- 0.16638

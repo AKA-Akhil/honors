@@ -1,0 +1,15 @@
+\begin{tabular}{lllrrr}
+\toprule
+model & template & method\_used & gender x level\_joint\_p & race x level\_joint\_p & three-way\_joint\_p \\
+\midrule
+llama32\_3b & A & MixedLM crossed resume+name, treatment coding, powell & 0.979 & 0.986 & 1.000 \\
+llama32\_3b & B & MixedLM crossed resume+name, treatment coding, lbfgs & 0.930 & 0.999 & 1.000 \\
+llama32\_3b & C & MixedLM crossed resume+name, treatment coding, powell & 0.999 & 0.996 & 1.000 \\
+qwen25\_3b & A & MixedLM crossed resume+name, treatment coding, lbfgs & 1.000 & 0.986 & 1.000 \\
+qwen25\_3b & B & MixedLM crossed resume+name, treatment coding, powell & 0.999 & 0.909 & 1.000 \\
+qwen25\_3b & C & MixedLM crossed resume+name, treatment coding, lbfgs & 1.000 & 0.845 & 0.998 \\
+phi35\_mini & A & MixedLM crossed resume+name, treatment coding, powell & 0.999 & 1.000 & 1.000 \\
+phi35\_mini & B & MixedLM crossed resume+name, treatment coding, powell & 0.997 & 1.000 & 1.000 \\
+phi35\_mini & C & MixedLM crossed resume+name, treatment coding, powell & 1.000 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}

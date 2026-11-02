@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Paired gaps in P(Yes), Template A. Gender gap = men $-$ women; race gap = White-named $-$ Black-named. Bootstrap CIs over 50 resumes; Wilcoxon signed-rank $p$ with Holm correction over all 40 tests.}\label{tab:gapsA}
+\begin{tabular}{llcccc}
+\toprule
+Model & Level & Gender gap [95\% CI] & $p_{\mathrm{Holm}}$ & Race gap [95\% CI] & $p_{\mathrm{Holm}}$ \\
+\midrule
+Llama & Q8\_0 & -0.011 [-0.019, -0.005] & $<$0.001 & +0.002 [-0.000, +0.006] & 1.000 \\
+Llama & Q6\_K & -0.013 [-0.020, -0.006] & $<$0.001 & +0.003 [+0.000, +0.007] & 0.422 \\
+Llama & Q4\_K\_M & -0.019 [-0.041, -0.005] & $<$0.001 & -0.001 [-0.006, +0.003] & 1.000 \\
+Llama & Q3\_K\_M & -0.012 [-0.023, -0.004] & $<$0.001 & -0.004 [-0.017, +0.002] & 1.000 \\
+Llama & Q2\_K & -0.003 [-0.013, +0.004] & 1.000 & +0.002 [-0.003, +0.011] & 1.000 \\
+Qwen & Q8\_0 & +0.004 [-0.002, +0.014] & 1.000 & -0.004 [-0.012, +0.001] & 1.000 \\
+Qwen & Q6\_K & +0.001 [-0.001, +0.003] & 1.000 & -0.003 [-0.011, +0.001] & 1.000 \\
+Qwen & Q4\_K\_M & +0.020 [+0.002, +0.042] & 1.000 & +0.015 [-0.005, +0.036] & 1.000 \\
+Qwen & Q3\_K\_M & -0.017 [-0.050, +0.009] & 1.000 & -0.003 [-0.022, +0.016] & 0.422 \\
+Qwen & Q2\_K & -0.020 [-0.044, +0.003] & 0.005 & +0.036 [+0.001, +0.077] & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

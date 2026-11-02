@@ -1,0 +1,20 @@
+llama32_3b A -> MixedLM crossed resume+name, treatment coding, powell | attempts 3
+llama32_3b B -> MixedLM crossed resume+name, treatment coding, lbfgs | attempts 1
+llama32_3b C -> MixedLM crossed resume+name, treatment coding, powell | attempts 3
+qwen25_3b A -> MixedLM crossed resume+name, treatment coding, lbfgs | attempts 1
+qwen25_3b B -> MixedLM crossed resume+name, treatment coding, powell | attempts 3
+qwen25_3b C -> MixedLM crossed resume+name, treatment coding, lbfgs | attempts 1
+phi35_mini A -> MixedLM crossed resume+name, treatment coding, powell | attempts 3
+phi35_mini B -> MixedLM crossed resume+name, treatment coding, powell | attempts 3
+phi35_mini C -> MixedLM crossed resume+name, treatment coding, powell | attempts 3
+        model template                                            method_used  original_converged  gender x level_joint_p  race x level_joint_p  three-way_joint_p  gender x level_sig_changed  race x level_sig_changed  three-way_sig_changed
+0  llama32_3b        A  MixedLM crossed resume+name, treatment coding, powell               False                   0.979                 0.986              1.000                       False                     False                  False
+1  llama32_3b        B   MixedLM crossed resume+name, treatment coding, lbfgs                True                   0.930                 0.999              1.000                       False                     False                  False
+2  llama32_3b        C  MixedLM crossed resume+name, treatment coding, powell               False                   0.999                 0.996              1.000                       False                     False                  False
+3   qwen25_3b        A   MixedLM crossed resume+name, treatment coding, lbfgs                True                   1.000                 0.986              1.000                       False                     False                  False
+4   qwen25_3b        B  MixedLM crossed resume+name, treatment coding, powell               False                   0.999                 0.909              1.000                       False                     False                  False
+5   qwen25_3b        C   MixedLM crossed resume+name, treatment coding, lbfgs                True                   1.000                 0.845              0.998                       False                     False                  False
+6  phi35_mini        A  MixedLM crossed resume+name, treatment coding, powell               False                   0.999                 1.000              1.000                       False                     False                  False
+7  phi35_mini        B  MixedLM crossed resume+name, treatment coding, powell               False                   0.997                 1.000              1.000                       False                     False                  False
+8  phi35_mini        C  MixedLM crossed resume+name, treatment coding, powell               False                   1.000                 1.000              1.000                       False                     False                  False
+any coefficient Holm-significant: 0

@@ -1,0 +1,34 @@
+[have] Llama-3.2-3B-Instruct-Q2_K.gguf
+[have] Llama-3.2-3B-Instruct-Q8_0.gguf
+[have] Qwen2.5-3B-Instruct-Q8_0.gguf
+[have] Qwen2.5-3B-Instruct-Q2_K.gguf
+[download] unsloth/Llama-3.2-3B-Instruct-GGUF/Llama-3.2-3B-Instruct-Q4_K_M.gguf (attempt 1)
+[have] Llama-3.2-3B-Instruct-Q4_K_M.gguf
+[download] bartowski/Qwen2.5-3B-Instruct-GGUF/Qwen2.5-3B-Instruct-Q4_K_M.gguf (attempt 1)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downlo[have] Llama-3.2-3B-Instruct-Q3_K_M.gguf
+[download] bartowski/Qwen2.5-3B-Instruct-GGUF/Qwen2.5-3B-Instruct-Q3_K_M.gguf (attempt 1)
+[have] Qwen2.5-3B-Instruct-Q3_K_M.gguf
+[download] unsloth/Llama-3.2-3B-Instruct-GGUF/Llama-3.2-3B-Instruct-Q6_K.gguf (attempt 1)
+[have] Llama-3.2-3B-Instruct-Q6_K.gguf
+[download] bartowski/Qwen2.5-3B-Instruct-GGUF/Qwen2.5-3B-Instruct-Q6_K.gguf (attempt 1)
+[have] Qwen2.5-3B-Instruct-Q6_K.gguf
+{
+  "llama32_3b": {
+    "Q2_K": "Llama-3.2-3B-Instruct-Q2_K.gguf",
+    "Q8_0": "Llama-3.2-3B-Instr[have] Qwen2.5-3B-Instruct-Q6_K.gguf
+{
+  "llama32_3b": {
+    "Q2_K": "Llama-3.2-3B-Instruct-Q2_K.gguf",
+    "Q8_0": "Llama-3.2-3B-Instruct-Q8_0.gguf",
+    "Q4_K_M": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "Q3_K_M": "Llama-3.2-3B-Instruct-Q3_K_M.gguf",
+    "Q6_K": "Llama-3.2-3B-Instruct-Q6_K.gguf"
+  },
+  "qwen25_3b": {
+    "Q8_0": "Qwen2.5-3B-Instruct-Q8_0.gguf",
+    "Q2_K": "Qwen2.5-3B-Instruct-Q2_K.gguf",
+    "Q4_K_M": "Qwen2.5-3B-Instruct-Q4_K_M.gguf",
+    "Q3_K_M": "Qwen2.5-3B-Instruct-Q3_K_M.gguf",
+    "Q6_K": "Qwen2.5-3B-Instruct-Q6_K.gguf"
+  }
+}

@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Large model weights and precompiled binaries
+models/
+tools/
+*.gguf
+*.zip
+*.dll
+*.exe
+
+# OS files
+.DS_Store
+Thumbs.db

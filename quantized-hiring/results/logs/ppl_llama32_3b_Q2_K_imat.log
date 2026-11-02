@@ -1,0 +1,12 @@
+CMD: C:\Users\asus\Desktop\quantized-hiring\tools\llama.cpp\cuda\llama-perplexity.exe -m C:\Users\asus\Desktop\quantized-hiring\models\llama32_3b\llama32_3b-Q2_K-imat.gguf -f C:\Users\asus\Desktop\quantized-hiring\data\calibration\wikitext2_test.txt --chunks 50 -c 512 -ngl 99
+0.15 minutes
+[1]8.0970,[2]10.1635,[3]12.2190,[4]12.2268,[5]12.5526,[6]13.1043,[7]13.7494,[8]14.5292,[9]15.9080,[10]16.2194,[11]16.4851,[12]16.8836,[13]17.8529,[14]17.0770,[15]16.7926,[16]15.9953,[17]15.7350,[18]16.1774,[19]16.1353,[20]15.8495,[21]15.7814,[22]15.3915,[23]14.9985,[24]14.8276,[25]14.4659,[26]14.4428,[27]14.2595,[28]14.1394,[29]14.3691,[30]14.3098,[31]14.3841,[32]14.3492,[33]14.4209,[34]14.5378,[35]14.7318,[36]14.9363,[37]14.7597,[38]14.8434,[39]14.7604,[40]14.7850,[41]14.7726,[42]14.6029,[43]14.6630,[44]14.5196,[45]14.6568,[46]14.6234,[47]14.5399,[48]14.5130,[49]14.4587,[50]14.5694,
+
+
+0.01.475.291 I cmn          init: llama threadpool init, n_threads = 14
+0.01.518.193 I 
+0.01.518.232 I system_info: n_threads = 14 (n_threads_batch = 14) / 20 | CUDA : ARCHS = 500,610,700,750,800,860,890,900 | USE_GRAPHS = 1 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.01.518.237 I perplexity: tokenizing the input ..
+0.01.637.341 I perplexity: tokenization took 119.094 ms
+0.01.637.925 I perplexity: calculating perplexity over 50 chunks, n_ctx=512, batch_size=2048, n_seq=4
+0.02.427.249 I perplexity: 0.79 seconds per pass - ETA 0.10.745.217 I Final estimate: PPL = 14.5694 +/- 0.36365

@@ -1,0 +1,102 @@
+# STATUS (Round 2)
+- [2026-10-29 04:28] Housekeeping done: round 1 archived, old models deleted, fresh STATUS/DECISIONS.
+- [2026-10-29 04:42] Citation check done -> results/citation_check.md (found: Hua et al. title/venue wrong in round 1 [COLM 2026, 'Investigating Social Bias Changes...']; Rath & Maliakkal venue IEEE Cloud Summit 2026; Marcuzzi venue and 'hiring as future work' claim for Al Hakim unverified). Scripts 01 (quantize), 02 (data, 150 resumes/1800 prompts), 03 (inference), 04 (analysis), 05 (figures), 06 (verify), 08 (cleanup) written; waiting on F16 downloads.
+- [2026-10-29 04:58] Llama F16 + Qwen F16 downloaded; Llama imatrix + 9 quantizations done (Q8_0..Q2_K imat, Q4/Q3/Q2 noimat); perplexity running; run_all.sh started for llama32_3b -> qwen25_3b -> phi35_mini (Phi F32 download in progress).
+- [2026-10-29 05:01] sanity llama32_3b F16: tier means {'borderline_high': 0.937, 'borderline_low': 0.037, 'strong': 0.991, 'weak': 0.0}, mean s/prompt 3.16, ngl=-1
+- [2026-10-29 05:22] sanity llama32_3b F16: tier means {'borderline_high': 0.937, 'borderline_low': 0.037, 'strong': 0.991, 'weak': 0.0}, mean s/prompt 11.38, ngl=-1
+- [2026-10-29 05:40] sanity llama32_3b F16: tier means {'borderline_high': 0.937, 'borderline_low': 0.037, 'strong': 0.991, 'weak': 0.0}, mean s/prompt 0.26, ngl=24
+- [2026-10-29 05:43] inference llama32_3b F16 ref template A: 600 prompts in 2.5 min (0.25 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=24
+- [2026-10-29 05:45] inference llama32_3b F16 ref template B: 600 prompts in 2.5 min (0.25 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=24
+- [2026-10-29 05:48] inference llama32_3b F16 ref template C: 600 prompts in 2.5 min (0.25 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=24
+- [2026-10-29 05:49] inference llama32_3b Q8_0 imat template A: 600 prompts in 0.9 min (0.09 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:50] inference llama32_3b Q8_0 imat template B: 600 prompts in 0.9 min (0.09 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:51] inference llama32_3b Q8_0 imat template C: 600 prompts in 0.9 min (0.09 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:52] inference llama32_3b Q6_K imat template A: 600 prompts in 1.1 min (0.11 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:53] inference llama32_3b Q6_K imat template B: 600 prompts in 1.1 min (0.11 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:54] inference llama32_3b Q6_K imat template C: 600 prompts in 1.1 min (0.11 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:55] inference llama32_3b Q5_K_M imat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:56] inference llama32_3b Q5_K_M imat template B: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:57] inference llama32_3b Q5_K_M imat template C: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:58] inference llama32_3b Q4_K_M imat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 05:59] inference llama32_3b Q4_K_M imat template B: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:00] inference llama32_3b Q4_K_M imat template C: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:01] inference llama32_3b Q3_K_M imat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:02] inference llama32_3b Q3_K_M imat template B: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:03] inference llama32_3b Q3_K_M imat template C: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:04] inference llama32_3b Q2_K imat template A: 600 prompts in 1.2 min (0.12 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:06] inference llama32_3b Q2_K imat template B: 600 prompts in 1.2 min (0.12 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:07] inference llama32_3b Q2_K imat template C: 600 prompts in 1.2 min (0.12 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:08] inference llama32_3b Q4_K_M noimat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:09] inference llama32_3b Q3_K_M noimat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:10] inference llama32_3b Q2_K noimat template A: 600 prompts in 1.2 min (0.12 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:18] sanity qwen25_3b F16: tier means {'borderline_high': 0.302, 'borderline_low': 0.0, 'strong': 0.965, 'weak': 0.0}, mean s/prompt 0.28, ngl=28
+- [2026-10-29 06:21] inference qwen25_3b F16 ref template A: 600 prompts in 2.8 min (0.28 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=28
+- [2026-10-29 06:24] inference qwen25_3b F16 ref template B: 600 prompts in 2.8 min (0.28 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=28
+- [2026-10-29 06:27] inference qwen25_3b F16 ref template C: 600 prompts in 2.8 min (0.28 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=28
+- [2026-10-29 06:28] inference qwen25_3b Q8_0 imat template A: 600 prompts in 0.9 min (0.09 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:29] inference qwen25_3b Q8_0 imat template B: 600 prompts in 0.9 min (0.09 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:30] inference qwen25_3b Q8_0 imat template C: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:31] inference qwen25_3b Q6_K imat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:32] inference qwen25_3b Q6_K imat template B: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:33] inference qwen25_3b Q6_K imat template C: 600 prompts in 1.1 min (0.11 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:34] inference qwen25_3b Q5_K_M imat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:35] inference qwen25_3b Q5_K_M imat template B: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:36] inference qwen25_3b Q5_K_M imat template C: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:37] inference qwen25_3b Q4_K_M imat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:38] inference qwen25_3b Q4_K_M imat template B: 600 prompts in 0.9 min (0.09 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:39] inference qwen25_3b Q4_K_M imat template C: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:40] inference qwen25_3b Q3_K_M imat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:41] inference qwen25_3b Q3_K_M imat template B: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:42] inference qwen25_3b Q3_K_M imat template C: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:43] inference qwen25_3b Q2_K imat template A: 600 prompts in 1.1 min (0.11 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:44] inference qwen25_3b Q2_K imat template B: 600 prompts in 1.1 min (0.11 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:45] inference qwen25_3b Q2_K imat template C: 600 prompts in 1.2 min (0.12 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:46] inference qwen25_3b Q4_K_M noimat template A: 600 prompts in 0.9 min (0.09 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:47] inference qwen25_3b Q3_K_M noimat template A: 600 prompts in 1.0 min (0.10 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 06:48] inference qwen25_3b Q2_K noimat template A: 600 prompts in 1.1 min (0.11 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 1.000, ngl=-1
+- [2026-10-29 07:12] sanity phi35_mini F16: tier means {'borderline_high': 1.0, 'borderline_low': 0.403, 'strong': 1.0, 'weak': 0.0}, mean s/prompt 0.52, ngl=22
+- [2026-10-29 07:18] inference phi35_mini F16 ref template A: 600 prompts in 5.7 min (0.57 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=22
+- [2026-10-29 07:24] inference phi35_mini F16 ref template B: 600 prompts in 6.0 min (0.60 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=22
+- [2026-10-29 07:29] inference phi35_mini F16 ref template C: 600 prompts in 5.8 min (0.58 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=22
+- [2026-10-29 07:31] inference phi35_mini Q8_0 imat template A: 600 prompts in 1.4 min (0.14 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:32] inference phi35_mini Q8_0 imat template B: 600 prompts in 1.5 min (0.15 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:34] inference phi35_mini Q8_0 imat template C: 600 prompts in 1.5 min (0.15 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:36] inference phi35_mini Q6_K imat template A: 600 prompts in 1.7 min (0.17 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:37] inference phi35_mini Q6_K imat template B: 600 prompts in 1.7 min (0.17 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:39] inference phi35_mini Q6_K imat template C: 600 prompts in 1.7 min (0.17 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:41] inference phi35_mini Q5_K_M imat template A: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:42] inference phi35_mini Q5_K_M imat template B: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:44] inference phi35_mini Q5_K_M imat template C: 600 prompts in 1.7 min (0.17 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:46] inference phi35_mini Q4_K_M imat template A: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:47] inference phi35_mini Q4_K_M imat template B: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:49] inference phi35_mini Q4_K_M imat template C: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:51] inference phi35_mini Q3_K_M imat template A: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:52] inference phi35_mini Q3_K_M imat template B: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:54] inference phi35_mini Q3_K_M imat template C: 600 prompts in 1.7 min (0.17 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:56] inference phi35_mini Q2_K imat template A: 600 prompts in 1.8 min (0.18 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:57] inference phi35_mini Q2_K imat template B: 600 prompts in 1.8 min (0.18 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 07:59] inference phi35_mini Q2_K imat template C: 600 prompts in 1.8 min (0.18 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 08:01] inference phi35_mini Q4_K_M noimat template A: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 08:03] inference phi35_mini Q3_K_M noimat template A: 600 prompts in 1.6 min (0.16 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.000, ngl=-1
+- [2026-10-29 08:04] inference phi35_mini Q2_K noimat template A: 600 prompts in 1.8 min (0.18 s/prompt), NaN=0, share with P(yes)+P(no)<0.5: 0.053, ngl=-1
+
+## For the user when you return
+**Round 2 is complete.** 72 runs (3 models x 24), all verified: `scripts/06_verify.py` 351 comparisons, 0 failures; determinism diff 0.0.
+- Read `RESULTS_REPORT.md` first (findings, threats, what the paper may and may not claim). Tables: `results/tables`, figures: `results/figures` (8), citation fixes: `results/citation_check.md`.
+- Headline: bias gaps are not worsened by quantization; decision drift is model-dependent (Qwen2.5-3B flips 29% at Q3_K_M, 37% at Q2_K; Llama/Phi <=2% to Q4_K_M); flips track F16 uncertainty and are demographically balanced.
+- `paper/` is untouched and outdated (round 1). Next step: rewrite it from RESULTS_REPORT.md and fix citations.
+- Caveats: 5 of 9 mixed models did not fully converge; inference engine differs from b11972; F16 files (23 GB) kept since 142 GB is free. Disk free after cleanup: 142 GB.
+
+## Final pre-paper checks (done)
+- Task 1: yesno_mass (+p05, LaTeX), sensitivity_mass_filtered, Qwen Q3_K_M/Q2_K re-created (exact p_yes reproduction on 50 prompts each), free-text check 60 prompts x 3 levels: all outputs are bare Yes/No.
+- Task 2: perplexity_vs_drift(.csv, _spearman.csv), fig7 annotated.
+- Task 3: b11972 llama-server vs bundled ggml 0.25.3 (0c1e570): max abs dp 0.056/0.061, decisions identical 100%.
+- Task 4: all 9 mixed fits converge with other optimizers; no conclusion changes. Task 5: undefined ratios fixed (11 rows). Task 6: results/references_verified.bib.
+- Task 7: 06_verify.py extended: 1,007 comparisons, 0 failures. Re-created Qwen GGUFs deleted.
+
+## For the user when you return
+- Finished: all seven pre-paper tasks; details in RESULTS_REPORT.md section 8.
+- Problems: a duplicate background launch of the Qwen check briefly contended for the GPU (stopped only my own stray processes, reran cleanly). Al Hakim et al.'s "hiring" limitation sentence is still only summary-verified; Hua/Rath page numbers unverified.
+- Qwen verdict: genuine "No" decisions (60/60 and 56/60 clean "No" at Q2_K/Q3_K_M, 0% breakdown); only the no-imatrix Q2_K file is a format failure.
+- Perplexity: it ranks drift within a model (pooled rho 0.73-0.77) but does not predict its size across models (Qwen Q3_K_M +55% ppl, 29% flips vs Llama +5.6%, 1.2%).
+- Everything is ready for paper writing (paper/ untouched; start from RESULTS_REPORT.md and results/references_verified.bib).

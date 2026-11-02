@@ -1,0 +1,14 @@
+\begin{tabular}{llccccc}
+\toprule
+Model & Level & Flip rate & Y$\to$N / N$\to$Y & $p_{\mathrm{McNemar}}^{\mathrm{Holm}}$ & $p_{\chi^2}$ (Y$\to$N by group) & Mean $|\Delta P|$ \\
+\midrule
+Llama & Q6\_K & 0.000 & 0/0 & -- & -- & 0.006 \\
+Llama & Q4\_K\_M & 0.010 & 0/2 & 1.000 & -- & 0.020 \\
+Llama & Q3\_K\_M & 0.055 & 0/11 & 0.009 & -- & 0.050 \\
+Llama & Q2\_K & 0.065 & 1/12 & 0.027 & -- & 0.073 \\
+Qwen & Q6\_K & 0.005 & 1/0 & 1.000 & -- & 0.007 \\
+Qwen & Q4\_K\_M & 0.045 & 9/0 & 0.027 & 0.550 & 0.061 \\
+Qwen & Q3\_K\_M & 0.265 & 53/0 & $<$0.001 & 0.949 & 0.259 \\
+Qwen & Q2\_K & 0.140 & 26/2 & $<$0.001 & 0.709 & 0.136 \\
+\bottomrule
+\end{tabular}

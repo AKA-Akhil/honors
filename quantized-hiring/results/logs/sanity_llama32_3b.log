@@ -1,0 +1,29 @@
+  autotune llama32_3b-F16.gguf: n_gpu_layers=28 -> 2.80 s per 450-token prompt
+  autotune llama32_3b-F16.gguf: n_gpu_layers=26 -> 3.54 s per 450-token prompt
+  autotune llama32_3b-F16.gguf: n_gpu_layers=24 -> 0.28 s per 450-token prompt
+  autotune llama32_3b-F16.gguf: n_gpu_layers=22 -> 0.37 s per 450-token prompt
+  autotune llama32_3b-F16.gguf: n_gpu_layers=20 -> 0.41 s per 450-token prompt
+  autotune llama32_3b-F16.gguf: n_gpu_layers=18 -> 0.47 s per 450-token prompt
+  autotune llama32_3b-F16.gguf: n_gpu_layers=16 -> 0.56 s per 450-token prompt
+  autotune llama32_3b-F16.gguf: n_gpu_layers=12 -> 0.66 s per 450-token prompt
+('strong', 'WF', 0.9907, 1.0, 'Yes', 0.33)
+('strong', 'WM', 0.997, 1.0, 'Yes', 0.25)
+('strong', 'WM', 0.9903, 1.0, 'Yes', 0.26)
+('strong', 'WM', 0.9922, 1.0, 'Yes', 0.26)
+('strong', 'BF', 0.9869, 1.0, 'Yes', 0.26)
+('borderline_high', 'BM', 0.9164, 1.0, 'Yes', 0.26)
+('borderline_high', 'WM', 0.9122, 1.0, 'Yes', 0.25)
+('borderline_high', 'BM', 0.972, 1.0, 'Yes', 0.27)
+('borderline_high', 'WM', 0.9235, 1.0, 'Yes', 0.26)
+('borderline_high', 'BM', 0.9608, 1.0, 'Yes', 0.25)
+('borderline_low', 'WF', 0.1136, 1.0, 'No', 0.24)
+('borderline_low', 'WF', 0.0223, 1.0, 'No', 0.25)
+('borderline_low', 'BM', 0.0379, 1.0, 'No', 0.24)
+('borderline_low', 'BM', 0.0042, 1.0, 'No', 0.25)
+('borderline_low', 'BM', 0.0089, 1.0, 'No', 0.25)
+('weak', 'BM', 0.0001, 1.0, 'No', 0.25)
+('weak', 'BF', 0.0006, 1.0, 'No', 0.24)
+('weak', 'WM', 0.0001, 1.0, 'No', 0.25)
+('weak', 'BM', 0.0008, 1.0, 'No', 0.24)
+('weak', 'WM', 0.0001, 1.0, 'No', 0.24)
+llama32_3b {'borderline_high': 0.9369799999999999, 'borderline_low': 0.037380000000000004, 'strong': 0.99142, 'weak': 0.00034} OK

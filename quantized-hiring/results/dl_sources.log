@@ -1,0 +1,7 @@
+C:\Users\asus\Desktop\quantized-hiring\.venv\Lib\site-packages\huggingface_hub\constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+[llama32_3b] bartowski/Llama-3.2-3B-Instruct-GGUF/Llama-3.2-3B-Instruct-f16.gguf
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[llama32_3b] done Llama-3.2-3B-Instruct-f16.gguf
+[qwen25_3b] bartowski/Qwen2.5-3B-Instruct-GGUF/Qwen2.5-3B-Instruct-f16.gguf
+[qwen25_3b] done Qwen2.5-3B-Instruct-f16.gguf

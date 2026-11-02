@@ -1,0 +1,15 @@
+== llama32_3b: template source = GGUF metadata tokenizer.chat_template; add_bos_token=False; bos='<|begin_of_text|>'; eos='<|eot_id|>'
+rendered example: '<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 29 Oct 2026\n\nSYS<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nUSER<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n'
+yes ids: 6, no ids: 7
+== llama32_3b: template source = GGUF metadata tokenizer.chat_template; add_bos_token=False; bos='<|begin_of_text|>'; eos='<|eot_id|>'
+rendered example: '<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 29 Oct 2026\n\nSYS<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nUSER<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n'
+yes ids: 6, no ids: 7
+== llama32_3b: template source = GGUF metadata tokenizer.chat_template; add_bos_token=False; bos='<|begin_of_text|>'; eos='<|eot_id|>'
+rendered example: '<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nCutting Knowledge Date: December 2023\nToday Date: 29 Oct 2026\n\nSYS<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nUSER<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n'
+yes ids: 6, no ids: 7
+== qwen25_3b: template source = GGUF metadata tokenizer.chat_template; add_bos_token=False; bos='<|endoftext|>'; eos='<|im_end|>'
+rendered example: '<|im_start|>system\nSYS<|im_end|>\n<|im_start|>user\nUSER<|im_end|>\n<|im_start|>assistant\n'
+yes ids: 6, no ids: 7
+== phi35_mini: template source = GGUF metadata tokenizer.chat_template; add_bos_token=False; bos='<s>'; eos='<|endoftext|>'
+rendered example: '<|system|>\nSYS<|end|>\n<|user|>\nUSER<|end|>\n<|assistant|>\n'
+yes ids: 6, no ids: 6

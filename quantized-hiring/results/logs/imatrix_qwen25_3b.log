@@ -1,0 +1,58 @@
+CMD: C:\Users\asus\Desktop\quantized-hiring\tools\llama.cpp\cuda\llama-imatrix.exe -m C:\Users\asus\Desktop\quantized-hiring\models\qwen25_3b\qwen25_3b-F16.gguf -f C:\Users\asus\Desktop\quantized-hiring\data\calibration\wikitext2_train.txt -o C:\Users\asus\Desktop\quantized-hiring\models\qwen25_3b\imatrix.dat --chunks 100 -c 512 -ngl 99
+25.63 minutes
+[1]12.1814,[2]14.1643,[3]14.6334,[4]12.5754,[5]13.1507,[6]13.0193,[7]13.9733,[8]13.9384,
+[9]12.7815,[10]11.9235,[11]11.9873,[12]11.9214,[13]11.4037,[14]11.9929,[15]12.0163,[16]11.9612,
+[17]11.7852,[18]11.5752,[19]11.6276,[20]11.6543,[21]11.7435,[22]11.6827,[23]11.9270,[24]11.7467,[25]11.2125,[26]11.0235,[27]10.8479,[28]10.7048,
+[29]10.4519,[30]10.4196,[31]10.1889,[32]10.0968,[33]9.9846,[34]9.8796,[35]9.9219,[36]9.9583,
+[37]9.8798,[38]9.7992,[39]9.8133,[40]9.7886,[41]9.8122,[42]9.9625,[43]9.9921,[44]10.0177,[45]10.0037,[46]9.9838,[47]9.8536,[48]9.7685,
+[49]9.6450,[50]9.7008,[51]9.6121,[52]9.6589,[53]9.6677,[54]9.7008,[55]9.6995,[56]9.6176,
+[57]9.6239,[58]9.6314,[59]9.6649,[60]9.7624,[61]9.7549,[62]9.6917,[63]9.6990,[64]9.6691,[65]9.5996,[66]9.5430,[67]9.5480,[68]9.4552,
+[69]9.3451,[70]9.3393,[71]9.3287,[72]9.3542,[73]9.3554,[74]9.3672,[75]9.3764,[76]9.4322,
+[77]9.4690,[78]9.5106,[79]9.4915,[80]9.4912,[81]9.4768,[82]9.5151,[83]9.5255,[84]9.5140,[85]9.5216,[86]9.5203,[87]9.5387,[88]9.5505,
+[89]9.5603,[90]9.5837,[91]9.5795,[92]9.5552,[93]9.5697,[94]9.5688,[95]9.6186,[96]9.6798,
+[97]9.7567,[98]9.8060,[99]9.8153,[100]9.7637,
+Final estimate: PPL = 9.7637 +/- 0.16677
+
+
+
+0.01.532.422 W common_fit_params: failed to fit params to free device memory: n_gpu_layers already set by user to 99, abort
+0.01.626.212 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.24.805.031 I cmn          init: llama threadpool init, n_threads = 14
+0.24.806.738 I 
+0.24.809.612 I system_info: n_threads = 14 (n_threads_batch = 14) / 20 | CUDA : ARCHS = 500,610,700,750,800,860,890,900 | USE_GRAPHS = 1 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.24.809.897 I compute_imatrix: tokenizing the input ..
+0.27.564.909 I compute_imatrix: tokenization took 2755 ms
+0.27.573.218 I compute_imatrix: computing over 100 chunks, n_ctx=512, batch_size=2048, n_seq=4
+1.29.125.200 I compute_imatrix: 61.55 seconds per pass - ETA 2.54.723.050 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+2.54.723.053 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+5.19.973.822 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+5.19.973.825 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+7.18.141.250 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+7.18.141.253 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+8.11.269.335 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+8.11.269.339 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+11.29.954.317 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+11.29.954.320 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+14.12.291.747 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+14.12.291.749 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+16.55.686.607 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+16.55.686.611 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+20.41.357.410 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+20.41.357.413 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+23.17.902.654 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+23.17.902.657 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+26.04.301.149 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+26.04.301.170 W save_imatrix: if you want the previous imatrix format, use --output-format dat
+26.23.353.272 W 
+save_imatrix: saving imatrix using GGUF format with a different suffix than .gguf
+26.23.353.276 W save_imatrix: if you want the previous imatrix format, use --output-format dat
